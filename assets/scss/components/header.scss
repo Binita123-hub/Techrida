@@ -1,0 +1,55 @@
+@import "../variables.scss";
+header  {
+    position: fixed;
+    padding: 22px 0;
+    width: 100%;
+    z-index: 99;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;  
+    background: $header-bg; 
+    &.header-scrolled {
+        background: $main-clr;
+    }
+    .btn {
+        padding: 3px 11px; 
+        color: $primary-clr;      
+    }
+    .btn-primary {
+        background: $primary-clr;
+        color: $white;
+    }
+    .hamburger {
+        width: 18px;
+        height: 18px;
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        transition: all 0.25s;
+        position: relative;
+        .top-bun,
+        .middle-bun,
+        .bottom-bun {
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 2px;
+            background: $primary-clr;
+            transform: rotate(0);
+            transition: all 0.5s;
+            right: 0;
+        }
+        .top-bun {
+            transform: translateY(-7px);
+        }
+        .middle-bun {
+            transform: translateY(0px);
+        }
+        .bottom-bun {
+            transform: translateY(7px);
+        }
+    }
+}

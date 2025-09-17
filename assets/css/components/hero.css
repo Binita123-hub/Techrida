@@ -1,0 +1,86 @@
+#hero-section {
+  overflow: hidden; }
+  #hero-section .container {
+    padding-top: 97px; }
+  #hero-section .logo-icon img {
+    width: 40%; }
+  #hero-section .detail-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 28px;
+    transition: all 0.45s ease-in-out;
+    border-left: 1px solid #44C8F5; }
+    #hero-section .detail-text h2 span {
+      color: #44C8F5; }
+    #hero-section .detail-text .btn {
+      padding: 3px 11px; }
+  #hero-section .half-circle {
+    width: 260px;
+    height: 520px;
+    margin-left: -30%; }
+    #hero-section .half-circle:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 260px;
+      height: 520px;
+      border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+      border-width: 2px 2px 2px 0;
+      border-style: dashed;
+      border-color: #ffffff;
+      opacity: 0.4; }
+  #hero-section .second-half {
+    width: 165px;
+    height: 330px;
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+    z-index: 9;
+    border-width: 2px 2px 2px 0;
+    border-style: dashed;
+    border-color: #ffffff;
+    opacity: 0.4; }
+  #hero-section .tab-button {
+    position: absolute !important;
+    width: 34%;
+    cursor: pointer;
+    transform-origin: 80px 65px;
+    transition: all 0.6s ease-in-out; }
+    #hero-section .tab-button img {
+      opacity: 0.4;
+      transition: all 0.6s ease-in-out;
+      width: 75%; }
+    #hero-section .tab-button:hover img {
+      transform: scale(1.1);
+      opacity: 1; }
+    #hero-section .tab-button.active {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 10px #ffffff); }
+    #hero-section .tab-button:nth-child(1) {
+      left: 0;
+      top: 0;
+      display: none; }
+    #hero-section .tab-button:nth-child(2) {
+      left: 0%;
+      top: 2%; }
+    #hero-section .tab-button:nth-child(3) {
+      left: 28%;
+      top: 9%; }
+    #hero-section .tab-button:nth-child(4) {
+      right: 15%;
+      top: 24%; }
+    #hero-section .tab-button:nth-child(5) {
+      right: 4%;
+      top: 50%;
+      transform: translateY(-50%); }
+    #hero-section .tab-button:nth-child(6) {
+      right: 11%;
+      top: 63%; }
+    #hero-section .tab-button:nth-child(7) {
+      left: 30%;
+      top: 76%; }
+    #hero-section .tab-button:nth-child(8) {
+      left: -4%;
+      bottom: 4%; }
+
+/*# sourceMappingURL=hero.css.map */

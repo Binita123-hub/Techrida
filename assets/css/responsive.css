@@ -1,0 +1,41 @@
+@media (max-width: 1023px) {
+  #hero-section .right-cnt {
+    display: none; }
+
+  #hero-section .container {
+    padding-top: 78px; } }
+@media (max-width: 992px) {
+  #about-section .left-cnt::before,
+  #about-section .left-cnt::after {
+    content: inherit; } }
+@media (max-width: 767px) {
+  #hero-section .tab-content {
+    display: block; }
+
+  #hero-section .tab-content.hidden {
+    display: none; }
+
+  #hero-section .detail-text {
+    border-left: 0;
+    font-size: 16px;
+    line-height: 24px; }
+
+  .text-cnt h2 {
+    margin-bottom: 20px; }
+
+  #hero-section .detail-text h2 {
+    font-size: 30px;
+    line-height: 40px; }
+
+  #hero-section .tab-icon img {
+    width: 16%; }
+
+  #our-teams .slick-prev, #our-teams .slick-next {
+    top: 50%;
+    transform: translateY(-50%); }
+
+  #contact-section .contact-wrapper h2 {
+    font-size: 50px;
+    letter-spacing: 5px; } }
+
+/*# sourceMappingURL=responsive.css.map */

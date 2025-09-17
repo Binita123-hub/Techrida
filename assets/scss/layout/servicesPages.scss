@@ -1,0 +1,12 @@
+#services-page {
+    padding: 80px 0;
+    .card {
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .card-body  {
+        h4{
+            color: $primary-clr;
+            font-weight: 600;
+        }
+    }
+}

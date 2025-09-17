@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,cAAe;EACX,OAAO,EAAE,OAAO;EAChB,oBAAM;IACF,UAAU,EAAE,6BAA6B",
+"sources": ["../../scss/layout/servicesPages.scss"],
+"names": [],
+"file": "servicesPages.css"
+}
