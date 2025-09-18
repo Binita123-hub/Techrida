@@ -1,8 +1,8 @@
-<header>
+<header id="mainHeader">
     <div class="container container-sm px-6 md:px-4">
-        <div class="flex items-center justify-between gap-5">
-            <div class="logo w-[35%]">
-                <a href="#">
+        <div class="flex items-center justify-between gap-5 md:h-[45px]">
+            <div class="logo-wrap w-[35%]">
+                <a class="logo" href="#">
                     <img class="md:w-[60%]" src="./images/Logo.png" alt="" />
                 </a> 
             </div> 

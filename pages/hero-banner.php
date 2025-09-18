@@ -84,9 +84,9 @@
                 </div>
             </div>  
             
-            <div class="right-cnt w-full lg:w-[22%] md:pl-4 mt-10 md:mt-0 relative">
+            <div class="right-cnt w-full lg:w-[22%] md:pl-4 mt-10 md:mt-0 relative right-wrap" id="rightContent">
                 <div class="half-circle flex items-center relative overflow-hidden mx-auto md:mx-0">
-                    <div class="tab-button logo-button active" data-tab="tab1">
+                    <div class="tab-button active" data-tab="tab1">
                         logo
                     </div>
                     <div class="tab-button" data-tab="tab2">
@@ -115,4 +115,53 @@
             </div> 
         </div>
     </div>    
+
+    <!-- <div class="container container-sm px-6 md:px-4 relative overflow-hidden h-full" >
+        <div class="banner-wrapper w-full md:flex justify-center items-center md:flex-row py-10 lg:pt-6 lg:pb-0">
+            <div class="left-cnt w-full lg:w-[77%] md:pr-2 relative md:h-auto">
+                
+                <div class="tab-content flex">
+                    <div class="tab-icon md:w-[35%] mb-4 md:mb-0">
+                        <img src="./images/AI&ML.png" alt="" />
+                    </div>
+                    <div class="detail-text md:w-[65%] relative md:ps-[50px]">
+                        <h2 class="text-[50px] leading-[60px] font-extrabold">360° Digital <span>Solution</span></h2>
+                        <p class="mt-3 mb-4">Techrida offers 360º digital solutions – seamlessly integrating technology with modern-day innovation of AI and machine learning to your platform that accelerates growth with intelligent, future-ready strategies for modern businesses. </p>
+                        <a href="#" class="btn btn-primary">Know more</a>
+                    </div>
+                </div>
+                
+            </div>  
+            
+            <div class="right-cnt w-full lg:w-[22%] md:pl-4 mt-10 md:mt-0 relative right-wrap" id="rightContent">
+                <div class="half-circle flex items-center relative overflow-hidden mx-auto md:mx-0">
+                    <div class="tab-button active" data-tab="tab1">
+                        logo
+                    </div>
+                    <div class="tab-button">
+                        <img class src="./images/AI&ML.png" alt="" />
+                    </div>
+                    <div class="tab-button">
+                        <img class src="./images/Analytics.png" alt="" />
+                    </div>
+                    <div class="tab-button">
+                        <img class src="./images/App-Modernization.png" alt="" />
+                    </div>
+                    <div class="tab-button">
+                       <img class src="./images/Business-Automation.png" alt="" />
+                    </div>
+                    <div class="tab-button">
+                        <img class src="./images/Consulting.png" alt="" />
+                    </div>
+                    <div class="tab-button">
+                       <img class src="./images/Innovation-Strategy.png" alt="" />
+                    </div>
+                    <div class="tab-button">
+                        <img class src="./images/DigitalPromotionsMarketing.png" alt="" />
+                    </div>
+                    <div class="second-half"></div>
+                </div>
+            </div> 
+        </div>
+    </div>    -->
 </section>      

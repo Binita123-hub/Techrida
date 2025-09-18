@@ -10,8 +10,11 @@ header  {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;  
     background: $header-bg; 
-    &.header-scrolled {
-        background: $main-clr;
+    &.header-logo {
+        .logo  {
+             display: none;
+             transition: all 0.3s ease;
+        }
     }
     .btn {
         padding: 3px 11px; 
