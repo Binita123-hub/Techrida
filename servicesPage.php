@@ -109,7 +109,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <script src="assets/js/common.js"></script>
 </body>

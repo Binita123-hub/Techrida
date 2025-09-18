@@ -2,7 +2,7 @@
     <div class="bg-img absolute w-full h-full">
         <img class="w-full h-full" src="./images/Techrida_bg.jpg" alt="" />
     </div>
-    <div class="container container-sm px-6 md:px-4 relative overflow-hidden h-full" >
+    <div class="container container-sm px-6 md:px-4 relative overflow-hidden h-full flex items-center justify-center" >
         <div class="banner-wrapper w-full md:flex justify-center items-center md:flex-row py-10 lg:pt-6 lg:pb-0">
             <div class="left-cnt w-full lg:w-[77%] md:pr-2 relative md:h-auto">
                 <div class="tab-content flex" id="tab1">

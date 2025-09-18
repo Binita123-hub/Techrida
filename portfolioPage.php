@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techrida</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="./assets/src/output.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header -->
+    <?php include "components/layout/header.php";
+    ?>
+
+    <!-- inner-banner -->
+    <section id="innerhero-section" class="w-full">    
+        <div class="bg-img">
+            <img class="overlay-img" src="./images/aboutus-bg.png" alt="" />
+        </div>
+        <div class="container px-6 md:px-4 flex justify-between items-center h-full">
+            <div class="banner-wrapper w-full md:flex-row text-center"> 
+                <h1 class="text-[59px] leading-[64px] mb-4">Our <span class="text-clr">Portfolio</span></h1>
+                <p class="text-lg">At the core of what we create is a drive to simplify, enhance, and inspire. Each project is more than technology—it’s a story of collaboration and transformation. We craft secure, efficient, and human-centered solutions that streamline complexity, deliver seamless experiences, and reflect a vision for tomorrow.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- our-work -->
+    <?php include "components/portfolioPage/workSection.php";
+    ?>
+
+    <!-- client-review -->
+    <?php include "components/portfolioPage/clientReview.php";
+    ?>
+
+
+    
+
+
+    <script src="assets/js/common.js"></script>
+</body>
+</html>
