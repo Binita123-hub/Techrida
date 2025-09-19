@@ -1,18 +1,34 @@
 @media (max-width: 1023px) {
-  #hero-section .right-cnt {
-    display: none; }
+  #hero-section .half-circle {
+    margin: 0; }
 
-  #hero-section .container {
-    padding-top: 78px; } }
+  #hero-section .logo-icon img {
+    width: 70%; }
+
+  #hero-section .detail-text {
+    border-left: 0; }
+
+  #hero-section .detail-text h2 {
+    font-size: 30px;
+    line-height: 40px; }
+
+  #hero-section .tab-content.active {
+    display: block; }
+
+  #hero-section .tab-icon img {
+    width: 30%; } }
 @media (max-width: 992px) {
   #about-section .left-cnt::before,
   #about-section .left-cnt::after {
-    content: inherit; } }
-@media (max-width: 767px) {
-  #hero-section .tab-content {
-    display: block; }
+    content: inherit; }
 
-  #hero-section .tab-content.hidden {
+  #innerhero-section.contact-page h1 {
+    letter-spacing: 5px; } }
+@media (max-width: 767px) {
+  #hero-section .banner-wrapper.second-banner {
+    padding: 40px 0; }
+
+  #hero-section .banner-wrapper.second-banner .right-cnt {
     display: none; }
 
   #hero-section .detail-text {
@@ -23,12 +39,8 @@
   .text-cnt h2 {
     margin-bottom: 20px; }
 
-  #hero-section .detail-text h2 {
-    font-size: 30px;
-    line-height: 40px; }
-
-  #hero-section .tab-icon img {
-    width: 16%; }
+  #innerhero-section.contact-page h1 {
+    letter-spacing: 0px; }
 
   #our-teams .slick-prev, #our-teams .slick-next {
     top: 50%;
@@ -50,5 +62,19 @@
     top: auto;
     transform: inherit;
     bottom: 9%; } }
+@media (max-width: 479px) {
+  header .btn {
+    padding: 3px 7px;
+    font-size: 12px; }
+
+  #hero-section .banner-wrapper.first-banner .right-cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  #hero-section .banner-wrapper.first-banner .left-cnt {
+    position: absolute;
+    width: 50%;
+    left: 0; } }
 
 /*# sourceMappingURL=responsive.css.map */

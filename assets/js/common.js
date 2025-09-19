@@ -267,33 +267,33 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 });
 
-// $("#our-teams .slick-slider").slick({
-//     slidesToShow: 3,
-//     infinite:true,
-//     slidesToScroll: 1,
-//     autoplay: false,
-//     autoplaySpeed: 2000,
-//     responsive: [
-//       {
-//         breakpoint: 991,
-//         settings: {
-//           slidesToShow: 3,
-//         }
-//       },
-//       {
-//         breakpoint: 767,
-//         settings: {
-//           slidesToShow: 1,
-//         }
-//       }
-//     ]
-// });
+$("#our-teams .slick-slider").slick({
+    slidesToShow: 3,
+    infinite:true,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+});
 
-// $("#review-section .slick-slider").slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 2000,
-//     // speed: 1000,
-//  	// cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
-// });
+$("#review-section .slick-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    // speed: 1000,
+ 	// cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+});

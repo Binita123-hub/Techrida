@@ -548,56 +548,34 @@ header {
   #our-teams .slick-prev::before {
     content: url(../../images/Vector-preview-arrow.png); }
 
-#contact-section {
-  padding: 100px 0; }
-  #contact-section .bg-img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; }
-  #contact-section .contact-wrapper h2 {
-    color: #ffffff;
-    letter-spacing: 10px; }
-  #contact-section .contact-wrap {
-    color: #ffffff; }
-  #contact-section .map img {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
-
-#innerhero-section {
+#innerhero-section .bg-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+#innerhero-section .container {
+  padding-top: 77px; }
+#innerhero-section .banner-wrapper {
   position: relative;
-  overflow: hidden;
-  height: 100vh; }
-  #innerhero-section .bg-img {
-    background: url(../../images/innerbanner-bg.jpg) no-repeat center;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  #innerhero-section .overlay-img {
-    opacity: 18%; }
-  #innerhero-section .container {
-    padding-top: 97px; }
-  #innerhero-section .banner-wrapper {
-    position: relative;
-    padding: 30px 0;
+  padding: 30px 0;
+  color: #ffffff; }
+  #innerhero-section .banner-wrapper h1 {
+    font-weight: 600;
     color: #ffffff; }
-    #innerhero-section .banner-wrapper h1 {
-      font-weight: 600;
-      color: #ffffff; }
-  #innerhero-section .breadcrumb .breadcrumb-item {
-    position: relative; }
-    #innerhero-section .breadcrumb .breadcrumb-item a {
-      color: #ffffff;
-      font-weight: 700; }
-    #innerhero-section .breadcrumb .breadcrumb-item:not(:last-child):after {
-      content: '/';
-      color: #ffffff; }
+#innerhero-section.contact-page h1 {
+  color: #ffffff;
+  letter-spacing: 10px; }
+#innerhero-section.contact-page .contact-wrap {
+  color: #ffffff; }
+#innerhero-section.contact-page .map img {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
+#innerhero-section.contact-page .mascot {
+  position: absolute;
+  right: 0;
+  bottom: 2%;
+  width: 30px; }
 
 #services-page {
   padding: 80px 0; }
@@ -723,20 +701,36 @@ header {
       margin-top: -50%; }
 
 @media (max-width: 1023px) {
-  #hero-section .right-cnt {
-    display: none; }
+  #hero-section .half-circle {
+    margin: 0; }
 
-  #hero-section .container {
-    padding-top: 78px; } }
+  #hero-section .logo-icon img {
+    width: 70%; }
+
+  #hero-section .detail-text {
+    border-left: 0; }
+
+  #hero-section .detail-text h2 {
+    font-size: 30px;
+    line-height: 40px; }
+
+  #hero-section .tab-content.active {
+    display: block; }
+
+  #hero-section .tab-icon img {
+    width: 30%; } }
 @media (max-width: 992px) {
   #about-section .left-cnt::before,
   #about-section .left-cnt::after {
-    content: inherit; } }
-@media (max-width: 767px) {
-  #hero-section .tab-content {
-    display: block; }
+    content: inherit; }
 
-  #hero-section .tab-content.hidden {
+  #innerhero-section.contact-page h1 {
+    letter-spacing: 5px; } }
+@media (max-width: 767px) {
+  #hero-section .banner-wrapper.second-banner {
+    padding: 40px 0; }
+
+  #hero-section .banner-wrapper.second-banner .right-cnt {
     display: none; }
 
   #hero-section .detail-text {
@@ -747,12 +741,8 @@ header {
   .text-cnt h2 {
     margin-bottom: 20px; }
 
-  #hero-section .detail-text h2 {
-    font-size: 30px;
-    line-height: 40px; }
-
-  #hero-section .tab-icon img {
-    width: 16%; }
+  #innerhero-section.contact-page h1 {
+    letter-spacing: 0px; }
 
   #our-teams .slick-prev, #our-teams .slick-next {
     top: 50%;
@@ -774,5 +764,19 @@ header {
     top: auto;
     transform: inherit;
     bottom: 9%; } }
+@media (max-width: 479px) {
+  header .btn {
+    padding: 3px 7px;
+    font-size: 12px; }
+
+  #hero-section .banner-wrapper.first-banner .right-cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  #hero-section .banner-wrapper.first-banner .left-cnt {
+    position: absolute;
+    width: 50%;
+    left: 0; } }
 
 /*# sourceMappingURL=style.css.map */
