@@ -27,15 +27,15 @@
                                 </ul>
                             </div>
                             <div class="address-cnt w-full pt-6">
-                                <a href="#" class="flex items-center justify-center mb-2">
+                                <a href="#" class="flex items-center mb-2">
                                     <i class="fa-regular fa-envelope me-2"></i>
                                     <div class="text-base">LoremIspum@gmail.com</div>
                                 </a>
-                                <a href="#" class="flex items-center justify-center mb-2">
+                                <a href="#" class="flex items-center mb-2">
                                     <i class="fa-solid fa-location-dot me-2"></i>
                                     <div class="text-base">977-9812345678</div>
                                 </a>
-                                <a href="#"class="flex items-center justify-center mb-8 md:mb-0">
+                                <a href="#"class="flex items-center mb-8 md:mb-0">
                                     <i class="fa-solid fa-phone me-2 "></i>                        
                                     <div class="text-base">Gyaneshwor,Kathmandu</div>
                                 </a>

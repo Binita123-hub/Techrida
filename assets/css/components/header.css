@@ -77,9 +77,7 @@ header {
     header .menu li a {
       text-transform: uppercase;
       font-weight: 700; }
-  header .address-cnt {
-    border-top: 1px solid #ffffff; }
-    header .address-cnt i {
-      font-size: 20px; }
+  header .address-cnt i {
+    font-size: 20px; }
 
 /*# sourceMappingURL=header.css.map */
