@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Remove class from header
                 header.classList.remove('banner-active');
                 initTabSystem();
-            }, 2000);
+            }, 1000);
         }
         
         // Initialize the tab system for the interactive circle
