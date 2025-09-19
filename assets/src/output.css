@@ -272,8 +272,17 @@
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
+  }
+  .mb-15 {
+    margin-bottom: calc(var(--spacing) * 15);
+  }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
   }
   .block {
     display: block;
@@ -296,6 +305,12 @@
   .table {
     display: table;
   }
+  .h-96 {
+    height: calc(var(--spacing) * 96);
+  }
+  .h-\[60\%\] {
+    height: 60%;
+  }
   .h-\[94px\] {
     height: 94px;
   }
@@ -313,6 +328,12 @@
   }
   .h-full {
     height: 100%;
+  }
+  .w-\[25px\] {
+    width: 25px;
+  }
+  .w-\[30px\] {
+    width: 30px;
   }
   .w-\[35\%\] {
     width: 35%;
@@ -355,6 +376,9 @@
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .content-between {
+    align-content: space-between;
   }
   .items-center {
     align-items: center;
@@ -411,6 +435,9 @@
   .px-\[17px\] {
     padding-inline: 17px;
   }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
@@ -423,8 +450,15 @@
   .py-\[25px\] {
     padding-block: 25px;
   }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
   .text-center {
     text-align: center;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-base {
     font-size: var(--text-base);
@@ -493,6 +527,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
@@ -615,6 +652,11 @@
       width: 35%;
     }
   }
+  .md\:w-\[40\%\] {
+    @media (width >= 48rem) {
+      width: 40%;
+    }
+  }
   .md\:w-\[50\%\] {
     @media (width >= 48rem) {
       width: 50%;
@@ -708,6 +750,26 @@
   .lg\:h-\[260px\] {
     @media (width >= 64rem) {
       height: 260px;
+    }
+  }
+  .lg\:h-\[300px\] {
+    @media (width >= 64rem) {
+      height: 300px;
+    }
+  }
+  .lg\:h-\[330px\] {
+    @media (width >= 64rem) {
+      height: 330px;
+    }
+  }
+  .lg\:h-\[350px\] {
+    @media (width >= 64rem) {
+      height: 350px;
+    }
+  }
+  .lg\:h-\[400px\] {
+    @media (width >= 64rem) {
+      height: 400px;
     }
   }
   .lg\:h-\[450px\] {

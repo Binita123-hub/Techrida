@@ -284,20 +284,20 @@ header {
       transition: all 0.5s;
       right: 0; }
     header .hamburger .top-bun {
-      transform: translateY(-7px); }
+      transform: translateY(-5px); }
     header .hamburger .middle-bun {
-      transform: translateY(0px); }
+      transform: translateY(3px); }
     header .hamburger .bottom-bun {
-      transform: translateY(7px); }
+      transform: translateY(11px); }
     header .hamburger.open {
       transform: rotate(90deg);
       transform: translateY(-1px); }
       header .hamburger.open .top-bun {
-        transform: rotate(45deg) translateY(0px); }
+        transform: rotate(45deg) translateY(4px); }
       header .hamburger.open .middle-bun {
         display: none; }
       header .hamburger.open .bottom-bun {
-        transform: rotate(-45deg) translatex(0px); }
+        transform: rotate(-45deg) translatex(-4px); }
   header .menu {
     position: fixed;
     top: 0;
@@ -311,13 +311,18 @@ header {
     padding: 65px 30px; }
     header .menu.is-hidden {
       transform: translateX(400px); }
-    header .menu li a {
+    header .menu a {
       color: #ffffff;
-      text-transform: uppercase;
-      font-weight: 800;
       transition: transform 0.3s ease-out; }
-    header .menu li:hover a {
-      color: #44C8F5; }
+      header .menu a:hover {
+        color: #44C8F5; }
+    header .menu li a {
+      text-transform: uppercase;
+      font-weight: 700; }
+  header .address-cnt {
+    border-top: 1px solid #ffffff; }
+    header .address-cnt i {
+      font-size: 20px; }
 
 #hero-section {
   overflow: hidden;
@@ -347,19 +352,11 @@ header {
   #hero-section .half-circle {
     width: 260px;
     height: 520px;
-    margin-left: -30%; }
-    #hero-section .half-circle:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 260px;
-      height: 520px;
-      border-radius: 0 100% 100% 0 / 0 50% 50% 0;
-      border-width: 2px 2px 2px 0;
-      border-style: dashed;
-      border-color: #fff;
-      opacity: 0.4; }
+    margin-left: -30%;
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+    border-width: 2px 2px 2px 0;
+    border-style: dashed;
+    border-color: rgba(255, 255, 255, 0.4); }
   #hero-section .second-half {
     width: 165px;
     height: 330px;
@@ -367,8 +364,7 @@ header {
     z-index: 9;
     border-width: 2px 2px 2px 0;
     border-style: dashed;
-    border-color: #fff;
-    opacity: 0.4; }
+    border-color: rgba(255, 255, 255, 0.4); }
   #hero-section .tab-button {
     position: absolute !important;
     cursor: pointer;

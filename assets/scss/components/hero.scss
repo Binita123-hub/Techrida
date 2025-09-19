@@ -41,19 +41,10 @@
     width: 260px;
     height: 520px;
     margin-left: -30%;
-    &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 260px;
-      height: 520px;
-      border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+     border-radius: 0 100% 100% 0 / 0 50% 50% 0;
       border-width: 2px 2px 2px 0;
       border-style: dashed;
-      border-color: #fff;
-      opacity: 0.4;
-    }
+      border-color: rgba(255,255,255,0.4);
   }
   .second-half {
     width: 165px;
@@ -62,8 +53,7 @@
     z-index: 9;
     border-width: 2px 2px 2px 0;
     border-style: dashed;
-    border-color: #fff;
-    opacity: 0.4;
+    border-color: rgba(255,255,255,0.4);
   }
   
   /* Tab buttons */

@@ -42,20 +42,20 @@ header {
       transition: all 0.5s;
       right: 0; }
     header .hamburger .top-bun {
-      transform: translateY(-7px); }
+      transform: translateY(-5px); }
     header .hamburger .middle-bun {
-      transform: translateY(0px); }
+      transform: translateY(3px); }
     header .hamburger .bottom-bun {
-      transform: translateY(7px); }
+      transform: translateY(11px); }
     header .hamburger.open {
       transform: rotate(90deg);
       transform: translateY(-1px); }
       header .hamburger.open .top-bun {
-        transform: rotate(45deg) translateY(0px); }
+        transform: rotate(45deg) translateY(4px); }
       header .hamburger.open .middle-bun {
         display: none; }
       header .hamburger.open .bottom-bun {
-        transform: rotate(-45deg) translatex(0px); }
+        transform: rotate(-45deg) translatex(-4px); }
   header .menu {
     position: fixed;
     top: 0;
@@ -69,12 +69,17 @@ header {
     padding: 65px 30px; }
     header .menu.is-hidden {
       transform: translateX(400px); }
-    header .menu li a {
+    header .menu a {
       color: #ffffff;
-      text-transform: uppercase;
-      font-weight: 800;
       transition: transform 0.3s ease-out; }
-    header .menu li:hover a {
-      color: #44C8F5; }
+      header .menu a:hover {
+        color: #44C8F5; }
+    header .menu li a {
+      text-transform: uppercase;
+      font-weight: 700; }
+  header .address-cnt {
+    border-top: 1px solid #ffffff; }
+    header .address-cnt i {
+      font-size: 20px; }
 
 /*# sourceMappingURL=header.css.map */

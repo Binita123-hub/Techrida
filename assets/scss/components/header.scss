@@ -51,13 +51,13 @@ header  {
             right: 0;
         }
         .top-bun {
-            transform: translateY(-7px);
+            transform: translateY(-5px);
         }
         .middle-bun {
-            transform: translateY(0px);
+            transform: translateY(3px);
         }
         .bottom-bun {
-            transform: translateY(7px);
+            transform: translateY(11px);
         }
         &.open {
             transform: rotate(90deg);
@@ -65,7 +65,7 @@ header  {
             .top-bun {
                 transform:
                     rotate(45deg)
-                    translateY(0px);
+                    translateY(4px);
             }
             .middle-bun {
                 display: none;
@@ -73,7 +73,7 @@ header  {
             .bottom-bun {
                 transform:
                     rotate(-45deg)
-                    translatex(0px);
+                    translatex(-4px);
             }
         }
     }
@@ -91,18 +91,24 @@ header  {
         &.is-hidden {
             transform: translateX(400px);
         }
+        a {
+            color: $white;
+            transition: transform 0.3s ease-out;
+             &:hover {
+               color: $light-blue;
+            }
+        }
         li {
             a {
-                color: $white;
                 text-transform: uppercase;
-                font-weight: 800;
-                transition: transform 0.3s ease-out;
-            }
-            &:hover {
-                a {
-                    color: $light-blue
-                }
-            }
+                font-weight: 700;
+            }           
+        }
+    }
+    .address-cnt {
+        border-top: 1px solid $white;
+        i {
+            font-size: 20px;
         }
     }
 }
