@@ -8,7 +8,7 @@
     </div>
     <div class="">
         <div class="md:flex-row">
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6">
+            <div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
                 <div class="card text-center h-[192px]">
                     <div class="card-img">
                         <img class="w-full" class src="./images/Portfolio-1.jpg" alt="" />
@@ -105,6 +105,9 @@
                         <h4 class="text-lg font-semibold">DataVista Analytics Dashboard</h4>
                     </div>
                 </div>
+            </div>
+            <div class="flex items-center justify-center mt-8">
+                <a href="#" class="btn btn-primary w-[70%] text-center">view all works</a>
             </div>
         </div>
     </div>

@@ -3,6 +3,10 @@
   #work-section .card {
     position: relative;
     overflow: hidden; }
+    #work-section .card .card-img {
+      height: 100%; }
+      #work-section .card .card-img img {
+        height: 100%; }
     #work-section .card .card-body {
       background-color: #35A8E0B2;
       color: #ffffff;
@@ -22,5 +26,91 @@
         line-height: 22px; }
     #work-section .card:hover .card-body {
       opacity: 1; }
+
+/** review-section **/
+#review-section {
+  padding: 60px 0;
+  background-color: #0F5FB8; }
+  #review-section h2 {
+    color: #ffffff; }
+  #review-section .card-body {
+    padding: 30px 30px 80px;
+    background-color: #ffffff; }
+    #review-section .card-body .text-cnt {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #034EA2; }
+  #review-section .star-icon {
+    font-size: 16px;
+    color: #0F5FB8; }
+  #review-section .profile-img {
+    margin-top: -3%; }
+  #review-section .details {
+    color: #ffffff; }
+  #review-section .slick-list.draggable {
+    width: 100%;
+    max-width: 790px;
+    margin: 0 auto; }
+  #review-section .slick-prev,
+  #review-section .slick-next {
+    top: 33%;
+    transform: translateX(-33%); }
+  #review-section .slick-next::before {
+    content: url(../../images/Next.png); }
+  #review-section .slick-prev::before {
+    content: url(../../images/preview.png); }
+
+/** record-section **/
+#record-section {
+  padding: 80px 0; }
+  #record-section .card {
+    box-shadow: 1px 0 13px rgba(0, 0, 0, 0.2);
+    border: 1px solid #EDEDED;
+    border-radius: 10px; }
+  #record-section .text h4 {
+    color: #034EA2; }
+  #record-section .post {
+    color: #000; }
+  #record-section .card-body {
+    background-color: #0F5FB8;
+    border-radius: 10px;
+    color: #ffffff; }
+  #record-section .bar {
+    height: 10px;
+    background-color: #ffffff; }
+  #record-section .bar-btn {
+    width: 5%;
+    background-color: #04FF3A; }
+  #record-section .percentage {
+    color: #04FF3A; }
+  #record-section li:nth-child(2) .bar-btn {
+    background-color: #F204FF; }
+  #record-section li:nth-child(3) .bar-btn {
+    background-color: #FF8800; }
+  #record-section li:nth-child(4) .bar-btn {
+    background-color: #04EEFF; }
+  #record-section li:nth-child(5) .bar-btn {
+    background-color: #04FF3A; }
+
+/** technology-section **/
+#technology-section {
+  background-color: #E6F2FF;
+  padding: 50px 0; }
+  #technology-section .top-text {
+    color: #44C8F5;
+    margin-bottom: 16px; }
+  #technology-section .card {
+    background-color: #ffffff; }
+    #technology-section .card img {
+      width: 80%;
+      -wekiyt-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out;
+      -moz-transition: all 0.6s ease-in-out;
+      -ms-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out; }
+    #technology-section .card:hover img {
+      transform: scale(1.5);
+      margin-top: -50%; }
 
 /*# sourceMappingURL=portfolioPages.css.map */

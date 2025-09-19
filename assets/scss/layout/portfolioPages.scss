@@ -4,6 +4,12 @@
     .card {
         position: relative;
         overflow: hidden;
+        .card-img {
+            height: 100%;
+            img {
+            height: 100%;
+            }
+        }
         .card-body  {
             background-color: $hover-blue;
             color: $white;
@@ -26,6 +32,135 @@
         &:hover {
             .card-body {
                 opacity: 1;
+            }
+        }
+    }
+}
+
+/** review-section **/
+#review-section {
+    padding: 60px 0;
+    background-color: $bg-clr;
+    h2 {
+        color: $white;
+    }
+    .card-body   {
+        padding: 30px 30px 80px;
+        background-color:  $white;
+        .text-cnt {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            color: $primary-clr;
+        }
+    }
+    .star-icon {
+        font-size: 16px;
+        color: $bg-clr;
+    }
+    .profile-img  {
+        margin-top: -3%;
+    }
+    .details {
+       color: $white; 
+    }
+    .slick-list.draggable {
+        width: 100%;
+        max-width: 790px;
+        margin: 0 auto;
+    }
+    .slick-prev,
+    .slick-next {
+        top: 33%;
+        transform: translateX(-33%);
+    }
+    .slick-next::before{
+        content: url(../../images/Next.png);
+    }
+    .slick-prev::before{
+        content: url(../../images/preview.png);
+    }
+}
+
+/** record-section **/
+#record-section {
+    padding: 80px 0;
+    .card {
+        box-shadow: 1px 0 13px rgba(0, 0, 0, 0.2);
+        border: 1px solid $brd-gray;
+        border-radius: 10px;
+    }
+    .text {
+        h4{
+            color: $primary-clr;
+        }
+    }
+    .post {
+        color: $black;
+    }
+    .card-body {
+        background-color: $bg-clr;
+        border-radius: 10px;
+        color: $white; 
+    }
+    .bar {
+        height: 10px;
+        background-color:$white ;
+    }
+    .bar-btn {
+        width: 5%;
+        background-color: $green;
+    }
+    .percentage {
+        color: $green;
+    }
+    li {
+        &:nth-child(2) {
+             .bar-btn {
+                background-color: $pink;
+            }
+        }
+        &:nth-child(3) {
+             .bar-btn {
+                background-color: $orange;
+            }
+        }
+        &:nth-child(4) {
+             .bar-btn {
+                background-color: $blue;
+            }
+        }
+        &:nth-child(5) {
+             .bar-btn {
+                background-color: $green;
+            }
+        }
+    }
+}
+
+/** technology-section **/
+
+#technology-section {
+    background-color: #E6F2FF;
+    padding: 50px 0;
+    .top-text {
+        color: $light-blue;
+        margin-bottom: 16px;
+    }
+    .card {
+        background-color:$white ;
+        img {
+            width: 80%; 
+            -wekiyt-transition: all 0.6s ease-in-out;
+            transition: all 0.6s ease-in-out;
+            -moz-transition: all 0.6s ease-in-out;
+            -ms-transition: all 0.6s ease-in-out;
+            -o-transition: all 0.6s ease-in-out;               
+        }
+        &:hover {
+            img {
+                transform: scale(1.5);
+                margin-top: -50%;
             }
         }
     }

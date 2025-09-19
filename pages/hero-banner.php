@@ -3,16 +3,47 @@
         <img class="w-full h-full" src="./images/Techrida_bg.jpg" alt="" />
     </div>
     <div class="container container-sm px-6 md:px-4 relative overflow-hidden h-full flex items-center justify-center" >
-        <div class="banner-wrapper w-full md:flex justify-center items-center md:flex-row py-10 lg:pt-6 lg:pb-0">
+        <!-- First banner wrapper -->
+        <div class="banner-wrapper first-banner w-full md:flex justify-center items-center md:flex-row py-10 lg:pt-6 lg:pb-0">
+            <div class="left-cnt w-full lg:w-[77%] md:pr-2 relative md:h-auto">
+                <div class="tab-logo flex justify-center items-center">
+                        <a href="#" class="logo-icon flex justify-center items-center">
+                        <img src="./images/logo-icon.png" alt="" />
+                    </a>
+                </div>
+            </div>  
+            <div id="rightContent" class="right-cnt w-full lg:w-[22%] md:pl-4 mt-10 md:mt-0 relative right-wrap" >
+                <div class="half-circle flex items-center relative overflow-hidden mx-auto md:mx-0">
+                    <div class="tab-button active" data-tab="tab1">
+                        <img src="./images/AI&ML.png" alt="" />
+                    </div>
+                    <div class="tab-button" data-tab="tab2">
+                        <img src="./images/Analytics.png" alt="" />
+                    </div>
+                    <div class="tab-button" data-tab="tab3">
+                        <img src="./images/App-Modernization.png" alt="" />
+                    </div>
+                    <div class="tab-button" data-tab="tab4">
+                        <img src="./images/Business-Automation.png" alt="" />
+                    </div>
+                    <div class="tab-button" data-tab="tab5">
+                        <img src="./images/Consulting.png" alt="" />
+                    </div>
+                    <div class="tab-button" data-tab="tab6">
+                        <img src="./images/Innovation-Strategy.png" alt="" />
+                    </div>
+                    <div class="tab-button" data-tab="tab7">
+                        <img src="./images/DigitalPromotionsMarketing.png" alt="" />
+                    </div>
+                    <div class="second-half"></div>
+                </div>
+            </div> 
+        </div>
+        
+        <!-- Second banner wrapper (initially hidden) -->
+        <div class="banner-wrapper second-banner hidden w-full md:flex justify-center items-center md:flex-row py-10 lg:pt-6 lg:pb-0">
             <div class="left-cnt w-full lg:w-[77%] md:pr-2 relative md:h-auto">
                 <div class="tab-content flex" id="tab1">
-                    <div class="tab-icon flex justify-center items-center">
-                         <a href="#" class="logo-icon flex justify-center items-center">
-                            <img src="./images/logo-icon.png" alt="" />
-                        </a>
-                    </div>
-                </div>
-                <div class="tab-content flex" id="tab2">
                     <div class="tab-icon md:w-[35%] mb-4 md:mb-0">
                         <img src="./images/AI&ML.png" alt="" />
                     </div>
@@ -22,7 +53,7 @@
                         <a href="#" class="btn btn-primary">Know more</a>
                     </div>
                 </div>
-                <div class="tab-content flex" id="tab3">
+                <div class="tab-content flex" id="tab2">
                     <div class="tab-icon md:w-[35%] mb-4 md:mb-0">
                         <img src="./images/Analytics.png" alt="" />
                     </div>
@@ -32,8 +63,8 @@
                         <a href="#" class="btn btn-primary">Know more</a>
                     </div>
                 </div>
-                <div class="tab-content flex" id="tab4">
-                   <div class="tab-icon md:w-[35%] mb-4 md:mb-0">
+                <div class="tab-content flex" id="tab3">
+                    <div class="tab-icon md:w-[35%] mb-4 md:mb-0">
                         <img src="./images/App-Modernization.png" alt="" />
                     </div>
                     <div class="detail-text md:w-[65%] relative md:ps-[50px]">
@@ -42,7 +73,7 @@
                         <a href="#" class="btn btn-primary">Know more</a>
                     </div>
                 </div>
-                <div class="tab-content flex" id="tab5">
+                <div class="tab-content flex" id="tab4">
                     <div class="tab-icon md:w-[35%] mb-4 md:mb-0">
                         <img src="./images/Business-Automation.png" alt="" />
                     </div>
@@ -52,7 +83,7 @@
                         <a href="#" class="btn btn-primary">Know more</a>
                     </div>
                 </div>
-                <div class="tab-content flex" id="tab6">
+                <div class="tab-content flex" id="tab5">
                     <div class="tab-icon md:w-[35%] mb-4 md:mb-0">
                         <img src="./images/Consulting.png" alt="" />
                     </div>
@@ -62,7 +93,7 @@
                         <a href="#" class="btn btn-primary">Know more</a>
                     </div>
                 </div>
-                <div class="tab-content flex" id="tab7">
+                <div class="tab-content flex" id="tab6">
                     <div class="tab-icon md:w-[35%] mb-4 md:mb-0">
                         <img src="./images/Innovation-Strategy.png" alt="" />
                     </div>
@@ -72,7 +103,7 @@
                         <a href="#" class="btn btn-primary">Know more</a>
                     </div>
                 </div>
-                <div class="tab-content flex" id="tab8">
+                <div class="tab-content flex" id="tab7">
                     <div class="tab-icon md:w-[35%] mb-4 md:mb-0">
                         <img src="./images/DigitalPromotionsMarketing.png" alt="" />
                     </div>
@@ -84,84 +115,32 @@
                 </div>
             </div>  
             
-            <div class="right-cnt w-full lg:w-[22%] md:pl-4 mt-10 md:mt-0 relative right-wrap" id="rightContent">
-                <div class="half-circle flex items-center relative overflow-hidden mx-auto md:mx-0">
+            <div id="rightContent" class="right-cnt w-full lg:w-[22%] md:pl-4 mt-10 md:mt-0 relative right-wrap">
+                 <div class="half-circle flex items-center relative overflow-hidden mx-auto md:mx-0">
                     <div class="tab-button active" data-tab="tab1">
-                        logo
+                        <img class src="./images/AI&ML.png" alt="" />
                     </div>
                     <div class="tab-button" data-tab="tab2">
-                        <img class src="./images/AI&ML.png" alt="" />
+                        <img class src="./images/Analytics.png" alt="" />
                     </div>
                     <div class="tab-button" data-tab="tab3">
-                        <img class src="./images/Analytics.png" alt="" />
+                        <img class src="./images/App-Modernization.png" alt="" />
                     </div>
                     <div class="tab-button" data-tab="tab4">
-                        <img class src="./images/App-Modernization.png" alt="" />
+                        <img class src="./images/Business-Automation.png" alt="" />
                     </div>
                     <div class="tab-button" data-tab="tab5">
-                       <img class src="./images/Business-Automation.png" alt="" />
+                        <img class src="./images/Consulting.png" alt="" />
                     </div>
                     <div class="tab-button" data-tab="tab6">
-                        <img class src="./images/Consulting.png" alt="" />
+                        <img class src="./images/Innovation-Strategy.png" alt="" />
                     </div>
                     <div class="tab-button" data-tab="tab7">
-                       <img class src="./images/Innovation-Strategy.png" alt="" />
-                    </div>
-                    <div class="tab-button" data-tab="tab8">
                         <img class src="./images/DigitalPromotionsMarketing.png" alt="" />
                     </div>
                     <div class="second-half"></div>
                 </div>
             </div> 
         </div>
-    </div>    
-
-    <!-- <div class="container container-sm px-6 md:px-4 relative overflow-hidden h-full" >
-        <div class="banner-wrapper w-full md:flex justify-center items-center md:flex-row py-10 lg:pt-6 lg:pb-0">
-            <div class="left-cnt w-full lg:w-[77%] md:pr-2 relative md:h-auto">
-                
-                <div class="tab-content flex">
-                    <div class="tab-icon md:w-[35%] mb-4 md:mb-0">
-                        <img src="./images/AI&ML.png" alt="" />
-                    </div>
-                    <div class="detail-text md:w-[65%] relative md:ps-[50px]">
-                        <h2 class="text-[50px] leading-[60px] font-extrabold">360° Digital <span>Solution</span></h2>
-                        <p class="mt-3 mb-4">Techrida offers 360º digital solutions – seamlessly integrating technology with modern-day innovation of AI and machine learning to your platform that accelerates growth with intelligent, future-ready strategies for modern businesses. </p>
-                        <a href="#" class="btn btn-primary">Know more</a>
-                    </div>
-                </div>
-                
-            </div>  
-            
-            <div class="right-cnt w-full lg:w-[22%] md:pl-4 mt-10 md:mt-0 relative right-wrap" id="rightContent">
-                <div class="half-circle flex items-center relative overflow-hidden mx-auto md:mx-0">
-                    <div class="tab-button active" data-tab="tab1">
-                        logo
-                    </div>
-                    <div class="tab-button">
-                        <img class src="./images/AI&ML.png" alt="" />
-                    </div>
-                    <div class="tab-button">
-                        <img class src="./images/Analytics.png" alt="" />
-                    </div>
-                    <div class="tab-button">
-                        <img class src="./images/App-Modernization.png" alt="" />
-                    </div>
-                    <div class="tab-button">
-                       <img class src="./images/Business-Automation.png" alt="" />
-                    </div>
-                    <div class="tab-button">
-                        <img class src="./images/Consulting.png" alt="" />
-                    </div>
-                    <div class="tab-button">
-                       <img class src="./images/Innovation-Strategy.png" alt="" />
-                    </div>
-                    <div class="tab-button">
-                        <img class src="./images/DigitalPromotionsMarketing.png" alt="" />
-                    </div>
-                    <div class="second-half"></div>
-                </div>
-            </div> 
-        </div>
-    </div>    -->
+    </div>   
 </section>      

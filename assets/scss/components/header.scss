@@ -10,7 +10,7 @@ header  {
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;  
     background: $header-bg; 
-    &.header-logo {
+    &.banner-active {
         .logo  {
              display: none;
              transition: all 0.3s ease;

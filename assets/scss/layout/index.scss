@@ -81,7 +81,6 @@ body{
 }
 #slick  .slick-next {
   right:0; 
-  background-color: $light-blue !important; 
 }
 #slick .slick-prev {
   left: 0;
@@ -90,8 +89,6 @@ body{
 #slick .slick-next{
   height: 38px;
   width: 38px;
-  background-color: $dark-gray;
-  border-radius: 4px;
   font-size: 0;
   position: absolute;
   top: 0;
@@ -106,12 +103,12 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#slick .slick-next::before{
-  content: url(../../images/Vector-next-arrow.png);
-}
-#slick .slick-prev::before{
-  content: url(../../images/Vector-preview-arrow.png);
-}
+// #slick .slick-next::before{
+//   content: url(../../images/Next.png);
+// }
+// #slick .slick-prev::before{
+//   content: url(../../images/preview.png);
+// }
 
 
 

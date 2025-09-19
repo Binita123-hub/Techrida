@@ -17,7 +17,7 @@
     <!-- inner-banner -->
     <section id="innerhero-section" class="w-full">    
         <div class="bg-img">
-            <img class="overlay-img" src="./images/aboutus-bg.png" alt="" />
+            <img class="overlay-img" src="./images/Portfolio-bg.png" alt="" />
         </div>
         <div class="container px-6 md:px-4 flex justify-between items-center h-full">
             <div class="banner-wrapper w-full md:flex-row text-center"> 
@@ -36,10 +36,19 @@
     <?php include "components/portfolioPage/clientReview.php";
     ?>
 
+    <!-- track record -->
+    <?php include "components/portfolioPage/trackRecord.php";
+    ?>
+
+    <!-- technology -->
+    <?php include "components/portfolioPage/technology.php";
+    ?>
+
 
     
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/common.js"></script>
 </body>
 </html>

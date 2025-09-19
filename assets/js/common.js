@@ -1,98 +1,121 @@
 document.addEventListener("DOMContentLoaded", () => {
-        const buttons = Array.from(document.querySelectorAll(".tab-button"));
-        const contents = Array.from(document.querySelectorAll(".tab-content"));
-        const halfCircle = document.querySelector(".half-circle");
-        const header = document.getElementById("mainHeader");
-        const rightContent = document.getElementById("rightContent");
-
-        const positions = [
-            { left: "", top: ""},
-            { left: "0%", top: "2%"},
-            { left: "28%", top: "9%"},
-            { right: "15%", top: "24%"},
-            { right: "4%", top: "50%", transform: "translateY(-50%)"},
-            { right: "11%", top: "63%"},
-            { left: "30%", top: "76%"},
-            { left: "-4%", bottom: "4%"}
-        ];
-
-        let currentOrder = [...buttons];
+        const firstBanner = document.querySelector('.first-banner');
+        const secondBanner = document.querySelector('.second-banner');
+        const header = document.querySelector('header');
+    
+        function handleBannerTransition() {
+            // Add class to header when showing first banner
+            header.classList.add('banner-active');
         
-        function applyPositions() {
-            currentOrder.forEach((btn, i) => {
-                const pos = positions[i];
-                btn.style.left = pos.left || "auto";
-                btn.style.right = pos.right || "auto";
-                btn.style.top = pos.top || "auto";
-                btn.style.bottom = pos.bottom || "auto";
-                btn.style.transform = pos.transform || "none";
-                btn.style.zIndex = pos.zIndex || "1";
+            setTimeout(() => {
+                firstBanner.classList.add('hidden');
+                secondBanner.classList.remove('hidden');
+                
+                // Remove class from header
+                header.classList.remove('banner-active');
+                initTabSystem();
+            }, 2000);
+        }
+        
+        // Initialize the tab system for the interactive circle
+        function initTabSystem() {
+            const buttons = Array.from(secondBanner.querySelectorAll(".tab-button"));
+            const contents = Array.from(secondBanner.querySelectorAll(".tab-content"));
+            const halfCircle = secondBanner.querySelector(".half-circle");
+            
+            // Define positions for each tab button
+            const positions = [
+                { left: "0%", top: "0%" },
+                { left: "0", top: "2%" },
+                { right: "30%", top: "13%"},
+                { right: "5%", top: "32%" },
+                { right: "4%", bottom: "34%" },
+                { right: "26%", bottom: "15%" },
+                { left: "0%", bottom: "4%" }
+            ];
+
+            let currentOrder = [...buttons];
+            let autoRotateInterval;
+            let isAutoRotating = true;
+
+            // Function to apply positions to buttons
+            function applyPositions() {
+                currentOrder.forEach((btn, i) => {
+                    const pos = positions[i];
+                    Object.assign(btn.style, {
+                        left: pos.left || "auto",
+                        right: pos.right || "auto",
+                        top: pos.top || "auto",
+                        bottom: pos.bottom || "auto",
+                        transform: pos.transform || "none",
+                        zIndex: pos.zIndex || "1",
+                        transition: "all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55)"
+                    });
+                });
+            }
+
+            function setActiveTab() {
+                // Remove active classes from all buttons and contents
+                buttons.forEach(btn => btn.classList.remove("active"));
+                contents.forEach(content => content.classList.remove("active"));
+                
+                // Add active class to the first button in currentOrder
+                currentOrder[0].classList.add("active");
+                const tabId = currentOrder[0].dataset.tab;
+                if (tabId) {
+                    const contentElement = document.getElementById(tabId);
+                    if (contentElement) {
+                        contentElement.classList.add("active");
+                    }
+                }
+            }
+
+            function rotateToIndex(index) {
+                // Create a new order by moving items before index to the end
+                const newOrder = [
+                    ...currentOrder.slice(index),
+                    ...currentOrder.slice(0, index)
+                ];                
+                currentOrder = newOrder;
+                currentOrder.forEach(btn => halfCircle.appendChild(btn));
+
+                applyPositions();
+                setActiveTab();
+            }
+
+            // Initialize auto rotation
+            function startAutoRotation() {
+                if (autoRotateInterval) clearInterval(autoRotateInterval);
+                autoRotateInterval = setInterval(() => {
+                    rotateToIndex(1); // Move second item to top
+                }, 5000);
+                isAutoRotating = true;
+            }
+
+            // Click event for tab buttons
+            buttons.forEach((btn, idx) => {
+                btn.addEventListener("click", (e) => {                   
+                    const newIndex = currentOrder.indexOf(btn);
+                    if (newIndex !== 0) {
+                        rotateToIndex(newIndex);
+                    }
+                });
             });
-        }
 
-        function setActiveTab(index) {
-            // Remove active classes
-            currentOrder.forEach(btn => btn.classList.remove("active"));
-            contents.forEach(content => content.classList.remove("active"));
-
-            // Add active class to new one
-            currentOrder[0].classList.add("active");
-            const tabId = currentOrder[0].dataset.tab;
-            document.getElementById(tabId).classList.add("active");
-            
-            // Handle header class based on active tab
-            if (tabId === "tab1") {
-                header.classList.add("header-logo");
-            } else {
-                header.classList.remove("header-logo");
-            }
-            
-            // Handle first tab visibility and right content class
-            if (tabId !== "tab1") {
-                document.getElementById("tab1").style.display = "none";
-                rightContent.classList.add("right-wrap");
-            } else {
-                document.getElementById("tab1").style.display = "flex";
-                rightContent.classList.remove("right-wrap");
-            }
-        }
-
-        function rotateToIndex(index) {
-            // Rotate array so clicked index becomes first (on top)
-            while (index !== 0) {
-                currentOrder.push(currentOrder.shift());
-                index--;
-            }
-
-            // Re-append in new order
-            currentOrder.forEach(btn => halfCircle.appendChild(btn));
-
+            // Initialize
             applyPositions();
-            setActiveTab(0);
+            setActiveTab();
+            startAutoRotation();
         }
-
-        // Click event
-        buttons.forEach((btn, idx) => {
-            btn.addEventListener("click", () => {
-                const newIndex = currentOrder.indexOf(btn);
-                rotateToIndex(newIndex);
-            });
-        });
-
-        // Auto rotate every 5 seconds
-        setInterval(() => {
-            rotateToIndex(1); // Move second item to top
-        }, 5000);
-
-        // Initial apply
-        applyPositions();
-        setActiveTab(0);
+        
+        // Start the banner transition
+        handleBannerTransition();
     });
 
 
-    $("#our-teams .slick-slider").slick({
+$("#our-teams .slick-slider").slick({
     slidesToShow: 3,
-    infinite:false,
+    infinite:true,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
@@ -110,4 +133,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     ]
+});
+
+$("#review-section .slick-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    // speed: 1000,
+ 	// cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
 });

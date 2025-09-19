@@ -50,10 +50,23 @@
     font-size: 50px;
    letter-spacing: 5px;
   }
+  #review-section .slick-list.draggable {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  } 
+  #review-section .card-body {
+    padding: 30px 20px 80px;
+  } 
 }
 
-@media (max-width: 550px) {
-   
+@media (max-width: 600px) {
+ #review-section .slick-prev, #review-section .slick-next {
+    top: auto;
+    transform: inherit;
+    bottom: 9%;
+
+ }
 }
 
 @media (max-width: 479px) {

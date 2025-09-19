@@ -9,7 +9,7 @@ header {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   background: #BCDCF5; }
-  header.header-logo .logo {
+  header.banner-active .logo {
     display: none;
     transition: all 0.3s ease; }
   header .btn {
