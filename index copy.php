@@ -15,7 +15,23 @@
 
     <!-- hero -->    
     <?php include "pages/hero-banner.php";
-    ?>  
+    ?> 
+
+    <!-- about-section -->
+    <?php include "components/layout/aboutSection.php";
+    ?> 
+
+    <!-- our-experties -->   
+    <?php include "components/layout/ourExpertieSection.php";
+    ?> 
+
+    <!-- our-team -->
+    <?php include "components/layout/ourTeamSection.php";
+    ?> 
+
+    <!-- our-team -->
+    <?php include "components/layout/contactSection.php";
+    ?> 
 
     
     

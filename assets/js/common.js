@@ -1,3 +1,22 @@
+$(document).ready(function() {
+    $(".hamburger").click(function(e) {
+        e.stopPropagation(); // Prevent this click from triggering document click
+        $(".hamburger").toggleClass('open');
+        $(".menu").toggleClass('is-hidden');
+    
+    });
+    
+    // Close sidebar when clicking outside
+    $(document).click(function(e) {
+        if (!$(e.target).closest('.menu').length && 
+            !$(e.target).is('.hamburger') && 
+            !$('.menu').hasClass('is-hidden')) {
+            $(".menu").addClass('is-hidden');
+            
+        }
+    });
+});
+
 document.addEventListener("DOMContentLoaded", () => {
         const firstBanner = document.querySelector('.first-banner');
         const secondBanner = document.querySelector('.second-banner');

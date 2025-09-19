@@ -1,23 +1,26 @@
 header {
   position: fixed;
-  padding: 22px 0;
+  padding: 16px 0;
   width: 100%;
   z-index: 99;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  background: #BCDCF5; }
+  transition: all 0.3s ease-out; }
   header.banner-active .logo {
     display: none;
     transition: all 0.3s ease; }
   header .btn {
     padding: 3px 11px;
-    color: #034EA2; }
+    color: #034EA2;
+    color: #ffffff;
+    border: 1px solid #ffffff; }
+    header .btn:hover {
+      background: #034EA2;
+      border-color: #034EA2; }
   header .btn-primary {
-    background: #034EA2;
-    color: #ffffff; }
+    background: transparent; }
   header .hamburger {
     width: 18px;
     height: 18px;
@@ -34,7 +37,7 @@ header {
       position: absolute;
       width: 18px;
       height: 2px;
-      background: #034EA2;
+      background: #ffffff;
       transform: rotate(0);
       transition: all 0.5s;
       right: 0; }
@@ -44,5 +47,34 @@ header {
       transform: translateY(0px); }
     header .hamburger .bottom-bun {
       transform: translateY(7px); }
+    header .hamburger.open {
+      transform: rotate(90deg);
+      transform: translateY(-1px); }
+      header .hamburger.open .top-bun {
+        transform: rotate(45deg) translateY(0px); }
+      header .hamburger.open .middle-bun {
+        display: none; }
+      header .hamburger.open .bottom-bun {
+        transform: rotate(-45deg) translatex(0px); }
+  header .menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    background-color: #0F5FB8;
+    box-shadow: 0px 0 13px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-out;
+    z-index: -1;
+    padding: 65px 30px; }
+    header .menu.is-hidden {
+      transform: translateX(400px); }
+    header .menu li a {
+      color: #ffffff;
+      text-transform: uppercase;
+      font-weight: 800;
+      transition: transform 0.3s ease-out; }
+    header .menu li:hover a {
+      color: #44C8F5; }
 
 /*# sourceMappingURL=header.css.map */

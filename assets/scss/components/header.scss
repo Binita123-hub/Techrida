@@ -1,7 +1,7 @@
 @import "../variables.scss";
 header  {
     position: fixed;
-    padding: 22px 0;
+    padding: 16px 0;
     width: 100%;
     z-index: 99;
     -webkit-transition: all 0.3s ease-out;
@@ -9,20 +9,25 @@ header  {
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;  
-    background: $header-bg; 
+    // background: $header-bg; 
     &.banner-active {
         .logo  {
-             display: none;
-             transition: all 0.3s ease;
+            display: none;
+            transition: all 0.3s ease;
         }
     }
     .btn {
         padding: 3px 11px; 
-        color: $primary-clr;      
+        color: $primary-clr; 
+        color: $white;
+        border: 1px solid $white;
+        &:hover {
+            background: $primary-clr;
+            border-color:  $primary-clr;
+        }     
     }
     .btn-primary {
-        background: $primary-clr;
-        color: $white;
+        background: transparent;
     }
     .hamburger {
         width: 18px;
@@ -40,7 +45,7 @@ header  {
             position: absolute;
             width: 18px;
             height: 2px;
-            background: $primary-clr;
+            background:  $white;
             transform: rotate(0);
             transition: all 0.5s;
             right: 0;
@@ -54,5 +59,54 @@ header  {
         .bottom-bun {
             transform: translateY(7px);
         }
+        &.open {
+            transform: rotate(90deg);
+            transform: translateY(-1px);
+            .top-bun {
+                transform:
+                    rotate(45deg)
+                    translateY(0px);
+            }
+            .middle-bun {
+                display: none;
+            }
+            .bottom-bun {
+                transform:
+                    rotate(-45deg)
+                    translatex(0px);
+            }
+        }
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 350px;
+        background-color: $bg-clr;
+        box-shadow: 0px 0 13px rgba(0,0,0,0.5);
+        transition: transform 0.3s ease-out;
+        z-index: -1;
+        padding: 65px 30px;
+        &.is-hidden {
+            transform: translateX(400px);
+        }
+        li {
+            a {
+                color: $white;
+                text-transform: uppercase;
+                font-weight: 800;
+                transition: transform 0.3s ease-out;
+            }
+            &:hover {
+                a {
+                    color: $light-blue
+                }
+            }
+        }
     }
 }
+    
+
+
+
