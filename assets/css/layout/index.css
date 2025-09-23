@@ -112,6 +112,60 @@ body {
   .text-cnt .text-clr {
     color: #44C8F5; }
 
+#our-experties h2,
+#our-teams h2,
+#work-Portfolio h2,
+#review-section h2,
+#record-section h2,
+#technology-section h2 {
+  position: relative; }
+  #our-experties h2::before, #our-experties h2::after,
+  #our-teams h2::before,
+  #our-teams h2::after,
+  #work-Portfolio h2::before,
+  #work-Portfolio h2::after,
+  #review-section h2::before,
+  #review-section h2::after,
+  #record-section h2::before,
+  #record-section h2::after,
+  #technology-section h2::before,
+  #technology-section h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36%;
+    height: 8px; }
+  #our-experties h2::before,
+  #our-teams h2::before,
+  #work-Portfolio h2::before,
+  #review-section h2::before,
+  #record-section h2::before,
+  #technology-section h2::before {
+    left: 0;
+    background: url("../../images/left-border.png") no-repeat right; }
+  #our-experties h2::after,
+  #our-teams h2::after,
+  #work-Portfolio h2::after,
+  #review-section h2::after,
+  #record-section h2::after,
+  #technology-section h2::after {
+    right: 0;
+    background: url("../../images/right-border.png") no-repeat center left; }
+
+#work-Portfolio h2::before, #work-Portfolio h2::after {
+  width: 38%; }
+
+#record-section h2::before, #record-section h2::after {
+  width: 38%; }
+
+#technology-section h2::before, #technology-section h2::after {
+  width: 30%; }
+#technology-section h2::before {
+  background: url("../../images/left-border-white.png") no-repeat right; }
+#technology-section h2::after {
+  background: url("../../images/border-2-white.png") no-repeat center left; }
+
 #slick .slick-initialized .slick-slide {
   display: block; }
 

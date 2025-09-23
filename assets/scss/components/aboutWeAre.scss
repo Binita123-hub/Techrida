@@ -14,7 +14,16 @@
             background: $tag-clr;
             border-radius: 15px 15px 0 0;
         }
-    }    
+    } 
+    .text-cnt {
+        h2{
+        &::before,
+        &::after  {
+            content: inherit;
+        }
+        }
+    }
+     
     .vertical {
         position: absolute;
         left: 0;

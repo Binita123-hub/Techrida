@@ -185,6 +185,60 @@ body {
   .text-cnt .text-clr {
     color: #44C8F5; }
 
+#our-experties h2,
+#our-teams h2,
+#work-Portfolio h2,
+#review-section h2,
+#record-section h2,
+#technology-section h2 {
+  position: relative; }
+  #our-experties h2::before, #our-experties h2::after,
+  #our-teams h2::before,
+  #our-teams h2::after,
+  #work-Portfolio h2::before,
+  #work-Portfolio h2::after,
+  #review-section h2::before,
+  #review-section h2::after,
+  #record-section h2::before,
+  #record-section h2::after,
+  #technology-section h2::before,
+  #technology-section h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36%;
+    height: 8px; }
+  #our-experties h2::before,
+  #our-teams h2::before,
+  #work-Portfolio h2::before,
+  #review-section h2::before,
+  #record-section h2::before,
+  #technology-section h2::before {
+    left: 0;
+    background: url("../../images/left-border.png") no-repeat right; }
+  #our-experties h2::after,
+  #our-teams h2::after,
+  #work-Portfolio h2::after,
+  #review-section h2::after,
+  #record-section h2::after,
+  #technology-section h2::after {
+    right: 0;
+    background: url("../../images/right-border.png") no-repeat center left; }
+
+#work-Portfolio h2::before, #work-Portfolio h2::after {
+  width: 38%; }
+
+#record-section h2::before, #record-section h2::after {
+  width: 38%; }
+
+#technology-section h2::before, #technology-section h2::after {
+  width: 30%; }
+#technology-section h2::before {
+  background: url("../../images/left-border-white.png") no-repeat right; }
+#technology-section h2::after {
+  background: url("../../images/border-2-white.png") no-repeat center left; }
+
 #slick .slick-initialized .slick-slide {
   display: block; }
 
@@ -490,6 +544,8 @@ header {
     height: 20px;
     background: #3A58A2;
     border-radius: 15px 15px 0 0; }
+  #about-section .text-cnt h2::before, #about-section .text-cnt h2::after {
+    content: inherit; }
   #about-section .vertical {
     position: absolute;
     left: 0;
@@ -523,6 +579,17 @@ header {
     position: absolute;
     right: 1%;
     top: 6%; }
+  #our-experties .border-img {
+    position: absolute; }
+  #our-experties .borderimg-1 {
+    left: 3%;
+    top: 12%; }
+  #our-experties .borderimg-2 {
+    left: 43%;
+    top: 12%; }
+  #our-experties .borderimg-3 {
+    right: 3%;
+    bottom: -5%; }
   #our-experties .items-wrap {
     width: 100%;
     margin: 0 auto; }
@@ -638,16 +705,16 @@ header {
     color: #034EA2;
     font-weight: 600; }
 
-#work-section {
+#work-Portfolio {
   padding: 80px 0; }
-  #work-section .card {
+  #work-Portfolio .card {
     position: relative;
     overflow: hidden; }
-    #work-section .card .card-img {
+    #work-Portfolio .card .card-img {
       height: 100%; }
-      #work-section .card .card-img img {
+      #work-Portfolio .card .card-img img {
         height: 100%; }
-    #work-section .card .card-body {
+    #work-Portfolio .card .card-body {
       background-color: #35A8E0B2;
       color: #ffffff;
       position: absolute;
@@ -662,9 +729,9 @@ header {
       -moz-transition: all 0.6s ease-in-out;
       -ms-transition: all 0.6s ease-in-out;
       -o-transition: all 0.6s ease-in-out; }
-      #work-section .card .card-body h4 {
+      #work-Portfolio .card .card-body h4 {
         line-height: 22px; }
-    #work-section .card:hover .card-body {
+    #work-Portfolio .card:hover .card-body {
       opacity: 1; }
 
 /** review-section **/
@@ -801,16 +868,26 @@ footer {
     height: 100%;
     z-index: -1; }
   footer .links {
-    color: #ffffff;
     font-weight: 500; }
+    footer .links h3,
+    footer .links p {
+      color: #ffffff; }
     footer .links a {
       display: block;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      color: #ffffff; }
   footer form .group {
-    margin: 0; }
+    margin: 0;
+    position: relative; }
   footer form input {
-    background-color: #ffffff;
     padding-right: 42px; }
+    footer form input::placeholder {
+      color: red; }
+  footer form .icon {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%); }
   footer form i {
     color: #0f67fd;
     font-size: 28px; }
@@ -857,7 +934,10 @@ footer {
     padding-top: 50px; }
 
   #conatct-section .map {
-    height: auto; } }
+    height: auto; }
+
+  #our-experties .border-img {
+    display: none; } }
 @media (max-width: 992px) {
   #about-section .left-cnt::before,
   #about-section .left-cnt::after {

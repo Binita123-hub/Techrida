@@ -28,7 +28,10 @@
     padding-top: 50px; }
 
   #conatct-section .map {
-    height: auto; } }
+    height: auto; }
+
+  #our-experties .border-img {
+    display: none; } }
 @media (max-width: 992px) {
   #about-section .left-cnt::before,
   #about-section .left-cnt::after {

@@ -29,7 +29,7 @@
     </section>
 
     <!-- our-work -->
-    <?php include "components/portfolioPage/workSection.php";
+    <?php include "components/portfolioPage/workPortfolio.php";
     ?>
 
     <!-- client-review -->

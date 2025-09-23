@@ -6,15 +6,17 @@
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-7">
                 <div class="card p-5">
-                    <div class="card-title xs:flex lg:h-[135px] mb-1">
-                        <div class="img-wrap w-[100px]">
-                            <img class="" src="./images/NepalPolice.png" alt="" />
-                        </div>
-                        <div class="text text-xs xl:text-sm xs:w-[70%]">
-                            <h4 class="text-xl font-semibold">Nepal Police</h4>
-                            <div class="font-semibold post">Payroll Management System</div>
-                            <div class="font-medium">
-                                Secure Payroll System for Police, automating salaries and allowances with accuracy and transparency.
+                    <div class="card-title lg:h-[135px] mb-1">
+                        <div class="xs:flex items-center">
+                            <div class="img-wrap w-[100px] me-2">
+                                <img class="" src="./images/NepalPolice.png" alt="" />
+                            </div>
+                            <div class="text text-xs xl:text-sm xs:w-[70%]">
+                                <h4 class="text-xl font-semibold">Nepal Police</h4>
+                                <div class="font-semibold post">Payroll Management System</div>
+                                <div class="font-medium">
+                                    Secure Payroll System for Police, automating salaries and allowances with accuracy and transparency.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -26,8 +28,8 @@
                                     Quality Of Service/Product
                                 </div>
                                 <div class="flex justify-center items-center">
-                                   <div class="bar relative rounded-full overflow-hidden w-full">
-                                        <div class="bar-btn absolute top-0 left-0 h-full rounded-full" ></div>
+                                    <div class="w-full rounded-full h-2.5 bar">
+                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #04FF3A;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -37,8 +39,8 @@
                                     Reliable & Trust
                                 </div>
                                 <div class="flex justify-center items-center">
-                                   <div class="bar relative rounded-full overflow-hidden w-full">
-                                        <div class="bar-btn absolute top-0 left-0 h-full rounded-full" ></div>
+                                   <div class="w-full rounded-full h-2.5 bar">
+                                        <div class="bar-btn h-2.5 rounded-full" style="width: 90%; background-color: #F204FF;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">90%</div>
                                 </div>
@@ -48,8 +50,8 @@
                                     Communication & Support
                                 </div>
                                 <div class="flex justify-center items-center">
-                                   <div class="bar relative rounded-full overflow-hidden w-full">
-                                        <div class="bar-btn absolute top-0 left-0 h-full rounded-full" ></div>
+                                   <div class="w-full rounded-full h-2.5 bar">
+                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #FF8800;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -59,8 +61,8 @@
                                     On Time Delivery
                                 </div>
                                 <div class="flex justify-center items-center">
-                                   <div class="bar relative rounded-full overflow-hidden w-full">
-                                        <div class="bar-btn absolute top-0 left-0 h-full rounded-full" ></div>
+                                  <div class="w-full rounded-full h-2.5 bar">
+                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #04EEFF;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -70,25 +72,27 @@
                                     Value For Money
                                 </div>
                                 <div class="flex justify-center items-center">
-                                   <div class="bar relative rounded-full overflow-hidden w-full">
-                                        <div class="bar-btn absolute top-0 left-0 h-full rounded-full" ></div>
+                                   <div class="w-full rounded-full h-2.5 bar">
+                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #04FF3A;"></div>
                                     </div>
-                                    <div class="ms-4 percentage font-semibold">100%</div>
+                                    <div class="ms-4 percentage font-semibold">50%</div>
                                 </div>
                             <li>
                         </ul>
                     </div>
                 </div>
                 <div class="card p-5">
-                    <div class="card-title xs:flex lg:h-[135px] mb-1">
-                        <div class="img-wrap w-[100px]">
-                            <img class="" src="./images/NepalPolice.png" alt="" />
-                        </div>
-                        <div class="text text-xs xl:text-sm  xs:w-[70%]">
-                            <h4 class="text-xl font-semibold">EnterBriz</h4>
-                            <div class=" font-semibold post">Business Register System</div>
-                            <div class="font-medium">
-                                Online Business Registration made simple, secure, and fast
+                    <div class="card-title  items-center lg:h-[135px] mb-1">
+                        <div class="xs:flex items-center">
+                            <div class="img-wrap w-[100px] me-2">
+                                <img class="" src="./images/EnterBiz.png" alt="" />
+                            </div>
+                            <div class="text text-xs xl:text-sm  xs:w-[70%]">
+                                <h4 class="text-xl font-semibold">EnterBriz</h4>
+                                <div class=" font-semibold post">Business Register System</div>
+                                <div class="font-medium">
+                                    Online Business Registration made simple, secure, and fast
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -100,8 +104,8 @@
                                     Quality Of Service/Product
                                 </div>
                                 <div class="flex justify-center items-center">
-                                   <div class="bar relative rounded-full overflow-hidden w-full">
-                                        <div class="bar-btn absolute top-0 left-0 h-full rounded-full" ></div>
+                                    <div class="w-full rounded-full h-2.5 bar">
+                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #04FF3A;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -111,8 +115,8 @@
                                     Reliable & Trust
                                 </div>
                                 <div class="flex justify-center items-center">
-                                   <div class="bar relative rounded-full overflow-hidden w-full">
-                                        <div class="bar-btn absolute top-0 left-0 h-full rounded-full" ></div>
+                                   <div class="w-full rounded-full h-2.5 bar">
+                                        <div class="bar-btn h-2.5 rounded-full" style="width: 90%; background-color: #F204FF;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">90%</div>
                                 </div>
@@ -122,8 +126,8 @@
                                     Communication & Support
                                 </div>
                                 <div class="flex justify-center items-center">
-                                   <div class="bar relative rounded-full overflow-hidden w-full">
-                                        <div class="bar-btn absolute top-0 left-0 h-full rounded-full" ></div>
+                                   <div class="w-full rounded-full h-2.5 bar">
+                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #FF8800;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -133,8 +137,8 @@
                                     On Time Delivery
                                 </div>
                                 <div class="flex justify-center items-center">
-                                   <div class="bar relative rounded-full overflow-hidden w-full">
-                                        <div class="bar-btn absolute top-0 left-0 h-full rounded-full" ></div>
+                                  <div class="w-full rounded-full h-2.5 bar">
+                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #04EEFF;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -144,25 +148,27 @@
                                     Value For Money
                                 </div>
                                 <div class="flex justify-center items-center">
-                                   <div class="bar relative rounded-full overflow-hidden w-full">
-                                        <div class="bar-btn absolute top-0 left-0 h-full rounded-full" ></div>
+                                   <div class="w-full rounded-full h-2.5 bar">
+                                        <div class="bar-btn h-2.5 rounded-full" style="width: 50%; background-color: #04FF3A;"></div>
                                     </div>
-                                    <div class="ms-4 percentage font-semibold">100%</div>
+                                    <div class="ms-4 percentage font-semibold">50%</div>
                                 </div>
                             <li>
                         </ul>
                     </div>
                 </div>
                 <div class="card p-5">
-                    <div class="card-title xs:flex lg:h-[135px] mb-1">
-                        <div class="img-wrap w-[100px]">
-                            <img class="" src="./images/NepalPolice.png" alt="" />
-                        </div>
-                        <div class="text text-xs xl:text-sm xs:w-[70%]">
-                            <h4 class="text-xl font-semibold">EnterBriz</h4>
-                            <div class="font-semibold post">Business Register System</div>
-                            <div class="font-medium">
-                                Online Business Registration made simple, secure, and fast
+                    <div class="card-title lg:h-[135px] mb-1">
+                        <div class="xs:flex items-center">
+                            <div class="img-wrap w-[100px] me-2">
+                                <img class="" src="./images/EnterBiz.png" alt="" />
+                            </div>
+                            <div class="text text-xs xl:text-sm xs:w-[70%]">
+                                <h4 class="text-xl font-semibold">EnterBriz</h4>
+                                <div class="font-semibold post">Business Register System</div>
+                                <div class="font-medium">
+                                    Online Business Registration made simple, secure, and fast
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -174,8 +180,8 @@
                                     Quality Of Service/Product
                                 </div>
                                 <div class="flex justify-center items-center">
-                                   <div class="bar relative rounded-full overflow-hidden w-full">
-                                        <div class="bar-btn absolute top-0 left-0 h-full rounded-full" ></div>
+                                    <div class="w-full rounded-full h-2.5 bar">
+                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #04FF3A;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -185,8 +191,8 @@
                                     Reliable & Trust
                                 </div>
                                 <div class="flex justify-center items-center">
-                                   <div class="bar relative rounded-full overflow-hidden w-full">
-                                        <div class="bar-btn absolute top-0 left-0 h-full rounded-full" ></div>
+                                   <div class="w-full rounded-full h-2.5 bar">
+                                        <div class="bar-btn h-2.5 rounded-full" style="width: 90%; background-color: #F204FF;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">90%</div>
                                 </div>
@@ -196,8 +202,8 @@
                                     Communication & Support
                                 </div>
                                 <div class="flex justify-center items-center">
-                                   <div class="bar relative rounded-full overflow-hidden w-full">
-                                        <div class="bar-btn absolute top-0 left-0 h-full rounded-full" ></div>
+                                   <div class="w-full rounded-full h-2.5 bar">
+                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #FF8800;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -207,8 +213,8 @@
                                     On Time Delivery
                                 </div>
                                 <div class="flex justify-center items-center">
-                                   <div class="bar relative rounded-full overflow-hidden w-full">
-                                        <div class="bar-btn absolute top-0 left-0 h-full rounded-full" ></div>
+                                  <div class="w-full rounded-full h-2.5 bar">
+                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #04EEFF;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -218,10 +224,10 @@
                                     Value For Money
                                 </div>
                                 <div class="flex justify-center items-center">
-                                   <div class="bar relative rounded-full overflow-hidden w-full">
-                                        <div class="bar-btn absolute top-0 left-0 h-full rounded-full" ></div>
+                                   <div class="w-full rounded-full h-2.5 bar">
+                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #04FF3A;"></div>
                                     </div>
-                                    <div class="ms-4 percentage font-semibold">100%</div>
+                                    <div class="ms-4 percentage font-semibold">50%</div>
                                 </div>
                             <li>
                         </ul>

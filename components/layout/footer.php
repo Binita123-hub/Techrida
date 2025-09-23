@@ -50,7 +50,7 @@
                         <form class="me-2 md:w-[75%]">
                             <div class="w-full group">
                                 <input type="text" id="name-input" class="block w-full p-2.5" placeholder=""> 
-                                <span class="flex justify-end relative -left-3" style="bottom: 37px;">
+                                <span class="icon">
                                     <i class="fa-regular fa-envelope"></i>
                                 </span>                          
                             </div>

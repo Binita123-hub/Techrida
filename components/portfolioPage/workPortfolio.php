@@ -1,8 +1,8 @@
-<section id="work-section">
+<section id="work-Portfolio">
     <div class="container px-6 md:px-4">
         <div class="md:flex-row">
             <div class="text-cnt text-center">
-                <h2 class="text-[20px] sm:text-[30px] md:text-[41px]">Our <span class="text-clr">Work</span></h2>                        
+                <h2 class="text-[20px] sm:text-[30px] md:text-[41px]">Our <span class="text-clr">Portfolio</span></h2>                        
             </div>
         </div>
     </div>

@@ -7,6 +7,9 @@
                 <h2 class="text-[20px] sm:text-[30px] md:text-[41px]">Our <span class="text-clr">EXPERTIES</span></h2>                        
             </div>
             <ul class="list lg:flex justify-between relative">
+               <img class="border-img borderimg-1" src="./images/border-2.png" alt="" />
+               <img class="border-img borderimg-2" src="./images/border-1.png" alt="" />
+               <img class="border-img borderimg-3" src="./images/border-2.png" alt="" />
                 <li class="lg:w-[18.75%;] md:flex items-end lg:h-[575px] lg:px-2 mb-6 lg:mb-0">
                     <div class="items-wrap max-w-[220px] h-[313px] relative overflow-hidden">
                         <div class="img-cnt">

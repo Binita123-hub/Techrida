@@ -2,7 +2,7 @@
     <div class="container px-6 md:px-4">
         <div class="md:flex-row">
             <div class="text-cnt text-center">
-                <h2 class="text-sm top-text">Our Expertise Tool & Technology</h2> 
+                <div class="text-sm top-text">Our Expertise Tool & Technology</div> 
                 <h2 class="text-[20px] sm:text-[30px] md:text-[41px]">Technology We Used</h2>                        
             </div>
         </div>
