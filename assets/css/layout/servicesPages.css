@@ -1,20 +1,20 @@
 /*
 Error: Undefined variable: "$primary-clr".
-        on line 8 of assets/scss/layout/servicesPages.scss
+        on line 15 of assets/scss/layout/servicesPages.scss
 
-3:     .card {
-4:         box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
-5:     }
-6:     .card-body  {
-7:         h4{
-8:             color: $primary-clr;
-9:             font-weight: 600;
-10:         }
-11:     }
-12: }
+10:             }
+11:         }
+12:     }
+13:     .card-body  {
+14:         h4{
+15:             color: $primary-clr;
+16:             font-weight: 600;
+17:         }
+18:     }
+19: }
 
 Backtrace:
-assets/scss/layout/servicesPages.scss:8
+assets/scss/layout/servicesPages.scss:15
 C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in 'Sass::Script::Tree::Variable#_perform'
 C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in 'Sass::Script::Tree::Node#perform'
 C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in 'Sass::Tree::Visitors::Perform#visit_prop'
@@ -76,17 +76,18 @@ C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compi
 C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in 'block in Sass::Plugin::Compiler#update_stylesheets'
 C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in 'Array#each'
 C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in 'Sass::Plugin::Compiler#update_stylesheets'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in 'Sass::Plugin::Compiler#watch'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin.rb:109:in 'Sass::Plugin#method_missing'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in 'Sass::Exec::SassScss#watch_or_update'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in 'Sass::Exec::SassScss#process_result'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in 'Sass::Exec::Base#parse'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in 'Sass::Exec::Base#parse!'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/bin/sass:13:in '<top (required)>'
-C:/Users/binis/AppData/Local/Microsoft/WindowsApps/sass:36:in 'Kernel#load'
-C:/Users/binis/AppData/Local/Microsoft/WindowsApps/sass:36:in '<main>'
+C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in 'Sass::Plugin::Compiler#on_file_changed'
+C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in 'block in Sass::Plugin::Compiler#watch'
+C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in 'SassListen::Event::Config#call'
+C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in 'SassListen::Event::Processor#_process_changes'
+C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in 'block in SassListen::Event::Processor#loop_for'
+<internal:kernel>:168:in 'Kernel#loop'
+C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in 'SassListen::Event::Processor#loop_for'
+C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in 'SassListen::Event::Loop#_wait_for_changes'
+C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in 'block in SassListen::Event::Loop#setup'
+C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in 'block in SassListen::Internals::ThreadPool.add'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$primary-clr\".\A         on line 8 of assets/scss/layout/servicesPages.scss\A \A 3:     .card {\A 4:         box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);\A 5:     }\A 6:     .card-body  {\A 7:         h4{\A 8:             color: $primary-clr;\A 9:             font-weight: 600;\A 10:         }\A 11:     }\A 12: }"; }
+  content: "Error: Undefined variable: \"$primary-clr\".\A         on line 15 of assets/scss/layout/servicesPages.scss\A \A 10:             }\A 11:         }\A 12:     }\A 13:     .card-body  {\A 14:         h4{\A 15:             color: $primary-clr;\A 16:             font-weight: 600;\A 17:         }\A 18:     }\A 19: }"; }

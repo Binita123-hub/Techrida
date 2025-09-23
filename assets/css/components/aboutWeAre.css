@@ -2,6 +2,8 @@
   position: relative;
   overflow: hidden;
   padding: 100px 0; }
+  #about-section .slide-left {
+    transition-delay: 0.2s; }
   #about-section .container:after {
     content: "";
     position: absolute;

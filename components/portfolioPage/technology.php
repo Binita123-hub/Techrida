@@ -1,7 +1,7 @@
 <section id="technology-section">
     <div class="container px-6 md:px-4">
         <div class="md:flex-row">
-            <div class="text-cnt text-center">
+            <div class="text-cnt text-center slide-up">
                 <div class="text-sm top-text">Our Expertise Tool & Technology</div> 
                 <h2 class="text-[20px] sm:text-[30px] md:text-[41px]">Technology We Used</h2>                        
             </div>
@@ -9,7 +9,7 @@
     </div>
     <div class="px-2">
         <div class="md:flex-row">
-            <div class="grid grid-cols-2 xs:grid-cols-5 lg:grid-cols-10 gap-2 mb-2">
+            <div class="grid grid-cols-2 xs:grid-cols-5 lg:grid-cols-10 gap-2 mb-2 slide-up">
                 <div class="card text-center p-2 flex justify-center items-center">
                     <img class="" class src="./images/technology-1.png" alt="" />
                 </div>
@@ -41,7 +41,7 @@
                     <img class="" class src="./images/technology-10.png" alt="" />
                 </div>       
             </div>
-             <div class="grid grid-cols-2 xs:grid-cols-5 lg:grid-cols-10 gap-2">
+            <div class="grid grid-cols-2 xs:grid-cols-5 lg:grid-cols-10 gap-2 slide-up">
                 <div class="card text-center p-2 flex justify-center items-center">
                     <img class="" class src="./images/technology-11.png" alt="" />
                 </div>

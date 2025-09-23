@@ -2,6 +2,13 @@
     padding: 80px 0;
     .card {
         box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7){
+            .slide-up {
+                transition-delay: 0.2s
+            }
+        }
     }
     .card-body  {
         h4{

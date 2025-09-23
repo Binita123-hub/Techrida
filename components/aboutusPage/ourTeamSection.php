@@ -1,14 +1,14 @@
 <section id="our-teams">
     <div class="container px-6 md:px-4">
         <div class=" md:flex-row">
-            <div class="text-cnt text-center">
+            <div class="text-cnt text-center slide-up">
                 <h2 class="text-[20px] sm:text-[30px] md:text-[41px]">Team <span class="text-clr">MEMBERS</span></h2>
                 <p>We’re some creative people with powerful knowledge & awesome skills behind the scene bringing you the bests</p>                        
             </div>
             <div  id="slick">
                 <div class="slick-slider mt-10">
                     <div class="element element-1">
-                        <div class="card">
+                        <div class="card slide-right">
                             <div class="card-img h-[353px] overflow-hidden relative">
                                 <img class="w-full" src="./images/experties-4.jpg" alt="" />
                             </div>
@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="element element-2">
-                        <div class="card">
+                        <div class="card slide-up">
                             <div class="card-img h-[353px] overflow-hidden relative">
                                 <img class="w-full" src="./images/experties-1.jpg" alt="" />
                             </div>
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <div class="element element-3">
-                        <div class="card">
+                        <div class="card slide-left">
                             <div class="card-img h-[353px] overflow-hidden relative">
                                 <img class="w-full" src="./images/experties-3.jpg" alt="" />
                             </div>

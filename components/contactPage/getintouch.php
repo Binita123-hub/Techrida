@@ -1,6 +1,6 @@
 <section id="conatct-section">
     <div class="container px-6 md:px-4">
-        <div class="lg:flex md:flex-row contact-wrap relative">
+        <div class="lg:flex md:flex-row contact-wrap relative slide-up">
             <div class="left-cnt lg:w-1/2 lg:pr-10 mb-5 lg:mb-0">
                 <div class="text-cnt text-center">
                     <h2 class="text-[20px] text-[30px] font-bold">Get In <span class="text-clr">Touch</span></h2>

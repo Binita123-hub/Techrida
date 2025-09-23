@@ -48,7 +48,7 @@ body{
 }
 #our-experties,
 #our-teams,
-#work-Portfolio,
+#our-Portfolio,
 #review-section,
 #record-section,
 #technology-section {
@@ -73,7 +73,7 @@ body{
         }
   }
 }
-#work-Portfolio {
+#our-Portfolio {
   h2 {
     &::before,
     &::after {
@@ -103,9 +103,6 @@ body{
       }
   }
 }
-
-
-
 
 #slick .slick-initialized .slick-slide {
   display: block;

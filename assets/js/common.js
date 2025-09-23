@@ -199,3 +199,67 @@ $("#review-section .slick-slider").slick({
     autoplay: true,
     autoplaySpeed: 2000,
 });
+
+ // Scroll animation logic
+document.addEventListener('DOMContentLoaded', function() {
+    const animationSections = document.querySelectorAll('div');
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top <= (window.innerHeight * 0.8) &&
+            rect.bottom >= (window.innerHeight * 0.2)
+        );
+    }
+    // Function to handle scroll animations
+    function handleScrollAnimations() {
+        animationSections.forEach((section) => {
+            if (isInViewport(section)) {
+                section.classList.add('active');
+            }
+        });               
+    }
+    handleScrollAnimations();
+    window.addEventListener('scroll', handleScrollAnimations);
+    window.addEventListener('resize', handleScrollAnimations);
+});
+
+
+
+/* animation */
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+        
+// Function to handle scroll animation
+function handleScrollAnimation() {
+    const cards = document.querySelectorAll('#record-section .card');
+    const grid = document.querySelector('#record-section .grid');
+    
+    if (isInViewport(grid)) {
+        cards.forEach((card, index) => {
+            setTimeout(() => {
+                card.classList.add('active');                
+                if (index === 1) { // Center card
+                    setTimeout(() => {
+                        const barBtns = document.querySelectorAll('#record-section .bar-btn');
+                        barBtns.forEach(bar => {
+                            const width = bar.getAttribute('data-width');
+                            bar.style.width = width;
+                        });
+                    }, 100);
+                }
+            }, index * 200);
+        });
+        
+        window.removeEventListener('scroll', handleScrollAnimation);
+    }
+}
+
+window.addEventListener('scroll', handleScrollAnimation);
+document.addEventListener('DOMContentLoaded', handleScrollAnimation);

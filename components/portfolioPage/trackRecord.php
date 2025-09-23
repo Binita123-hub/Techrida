@@ -1,7 +1,7 @@
 <section id="record-section">
     <div class="container px-6 md:px-4">
         <div class="md:flex-row">
-            <div class="text-cnt text-center">
+            <div class="text-cnt text-center slide-up">
                 <h2 class="text-[20px] sm:text-[30px] md:text-[41px]">Track <span class="text-clr">Record</span></h2>                        
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-7">
@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="flex justify-center items-center">
                                     <div class="w-full rounded-full h-2.5 bar">
-                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #04FF3A;"></div>
+                                        <div class="bar-btn h-2.5 rounded-full" data-width="100%" style="background-color: #04FF3A;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="flex justify-center items-center">
                                    <div class="w-full rounded-full h-2.5 bar">
-                                        <div class="bar-btn h-2.5 rounded-full" style="width: 90%; background-color: #F204FF;"></div>
+                                        <div class="bar-btn h-2.5 rounded-full" data-width="90%" style="background-color: #F204FF;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">90%</div>
                                 </div>
@@ -51,7 +51,7 @@
                                 </div>
                                 <div class="flex justify-center items-center">
                                    <div class="w-full rounded-full h-2.5 bar">
-                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #FF8800;"></div>
+                                        <div class="bar-btn h-2.5 rounded-full" data-width="100%" style="background-color: #FF8800;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -62,7 +62,7 @@
                                 </div>
                                 <div class="flex justify-center items-center">
                                   <div class="w-full rounded-full h-2.5 bar">
-                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #04EEFF;"></div>
+                                        <div class="bar-btn h-2.5 rounded-full" data-width="100%" style=" background-color: #04EEFF;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="flex justify-center items-center">
                                    <div class="w-full rounded-full h-2.5 bar">
-                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #04FF3A;"></div>
+                                        <div class="bar-btn h-2.5 rounded-full" data-width="50%" style="background-color: #04FF3A;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">50%</div>
                                 </div>
@@ -105,7 +105,7 @@
                                 </div>
                                 <div class="flex justify-center items-center">
                                     <div class="w-full rounded-full h-2.5 bar">
-                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #04FF3A;"></div>
+                                        <div class="bar-btn h-2.5 rounded-full" data-width="100%" style="background-color: #04FF3A;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -116,7 +116,7 @@
                                 </div>
                                 <div class="flex justify-center items-center">
                                    <div class="w-full rounded-full h-2.5 bar">
-                                        <div class="bar-btn h-2.5 rounded-full" style="width: 90%; background-color: #F204FF;"></div>
+                                        <div class="bar-btn h-2.5 rounded-full" data-width="90%" style="background-color: #F204FF;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">90%</div>
                                 </div>
@@ -127,7 +127,7 @@
                                 </div>
                                 <div class="flex justify-center items-center">
                                    <div class="w-full rounded-full h-2.5 bar">
-                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #FF8800;"></div>
+                                        <div class="bar-btn h-2.5 rounded-full" data-width="100%" style="background-color: #FF8800;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -138,7 +138,7 @@
                                 </div>
                                 <div class="flex justify-center items-center">
                                   <div class="w-full rounded-full h-2.5 bar">
-                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #04EEFF;"></div>
+                                        <div class="bar-btn h-2.5 rounded-full" data-width="100%" style=" background-color: #04EEFF;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -149,7 +149,7 @@
                                 </div>
                                 <div class="flex justify-center items-center">
                                    <div class="w-full rounded-full h-2.5 bar">
-                                        <div class="bar-btn h-2.5 rounded-full" style="width: 50%; background-color: #04FF3A;"></div>
+                                        <div class="bar-btn h-2.5 rounded-full" data-width="50%" style="background-color: #04FF3A;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">50%</div>
                                 </div>
@@ -181,7 +181,7 @@
                                 </div>
                                 <div class="flex justify-center items-center">
                                     <div class="w-full rounded-full h-2.5 bar">
-                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #04FF3A;"></div>
+                                        <div class="bar-btn h-2.5 rounded-full" data-width="100%" style="background-color: #04FF3A;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -192,7 +192,7 @@
                                 </div>
                                 <div class="flex justify-center items-center">
                                    <div class="w-full rounded-full h-2.5 bar">
-                                        <div class="bar-btn h-2.5 rounded-full" style="width: 90%; background-color: #F204FF;"></div>
+                                        <div class="bar-btn h-2.5 rounded-full" data-width="90%" style="background-color: #F204FF;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">90%</div>
                                 </div>
@@ -203,7 +203,7 @@
                                 </div>
                                 <div class="flex justify-center items-center">
                                    <div class="w-full rounded-full h-2.5 bar">
-                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #FF8800;"></div>
+                                        <div class="bar-btn h-2.5 rounded-full" data-width="100%" style="background-color: #FF8800;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -214,7 +214,7 @@
                                 </div>
                                 <div class="flex justify-center items-center">
                                   <div class="w-full rounded-full h-2.5 bar">
-                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #04EEFF;"></div>
+                                        <div class="bar-btn h-2.5 rounded-full" data-width="100%" style=" background-color: #04EEFF;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">100%</div>
                                 </div>
@@ -225,7 +225,7 @@
                                 </div>
                                 <div class="flex justify-center items-center">
                                    <div class="w-full rounded-full h-2.5 bar">
-                                        <div class="bar-btn h-2.5 rounded-full" style="width: 100%; background-color: #04FF3A;"></div>
+                                        <div class="bar-btn h-2.5 rounded-full" data-width="50%" style="background-color: #04FF3A;"></div>
                                     </div>
                                     <div class="ms-4 percentage font-semibold">50%</div>
                                 </div>

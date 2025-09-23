@@ -1,13 +1,15 @@
-#work-Portfolio {
+#our-Portfolio {
   padding: 80px 0; }
-  #work-Portfolio .card {
+  #our-Portfolio .card {
     position: relative;
     overflow: hidden; }
-    #work-Portfolio .card .card-img {
+    #our-Portfolio .card:nth-child(7) .slide-up, #our-Portfolio .card:nth-child(8) .slide-up, #our-Portfolio .card:nth-child(9) .slide-up, #our-Portfolio .card:nth-child(10) .slide-up, #our-Portfolio .card:nth-child(11) .slide-up, #our-Portfolio .card:nth-child(12) .slide-up {
+      transition-delay: 0.2s; }
+    #our-Portfolio .card .card-img {
       height: 100%; }
-      #work-Portfolio .card .card-img img {
+      #our-Portfolio .card .card-img img {
         height: 100%; }
-    #work-Portfolio .card .card-body {
+    #our-Portfolio .card .card-body {
       background-color: #35A8E0B2;
       color: #ffffff;
       position: absolute;
@@ -22,10 +24,12 @@
       -moz-transition: all 0.6s ease-in-out;
       -ms-transition: all 0.6s ease-in-out;
       -o-transition: all 0.6s ease-in-out; }
-      #work-Portfolio .card .card-body h4 {
+      #our-Portfolio .card .card-body h4 {
         line-height: 22px; }
-    #work-Portfolio .card:hover .card-body {
+    #our-Portfolio .card:hover .card-body {
       opacity: 1; }
+  #our-Portfolio .view-btn.slide-up {
+    transition-delay: 0.4s; }
 
 /** review-section **/
 #review-section {
@@ -48,6 +52,8 @@
     margin-top: -3%; }
   #review-section .details {
     color: #ffffff; }
+  #review-section .slick-slider.slide-up {
+    transition-delay: 0.2s; }
   #review-section .slick-list.draggable {
     width: 100%;
     max-width: 790px;
@@ -67,7 +73,25 @@
   #record-section .card {
     box-shadow: 1px 0 13px rgba(0, 0, 0, 0.2);
     border: 1px solid #EDEDED;
-    border-radius: 10px; }
+    border-radius: 10px;
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background-color: #ffffff; }
+  #record-section .card:nth-child(1) {
+    opacity: 0;
+    transform: translateX(300px) translateY(0px) scale(0.95); }
+  #record-section .card:nth-child(2) {
+    transform: translateY(0) scale(1);
+    position: relative;
+    opacity: 1;
+    transform: translateY(0) scale(1); }
+  #record-section .card:nth-child(3) {
+    opacity: 0;
+    transform: translateX(-300px) translateY(0px) scale(0.95);
+    z-index: -1; }
+  #record-section .card:nth-child(1).active,
+  #record-section .card:nth-child(3).active {
+    opacity: 1;
+    transform: translateX(0) translateY(0) scale(1); }
   #record-section .text h4 {
     color: #034EA2; }
   #record-section .post {
@@ -78,20 +102,15 @@
     color: #ffffff; }
   #record-section .bar {
     height: 10px;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    overflow: hidden; }
   #record-section .bar-btn {
-    width: 5%;
-    background-color: #04FF3A; }
+    background-color: #04FF3A;
+    height: 10px;
+    width: 0%;
+    transition: width 1.5s ease-in-out 0.5s; }
   #record-section .percentage {
     color: #04FF3A; }
-  #record-section li:nth-child(2) .bar-btn {
-    background-color: #F204FF; }
-  #record-section li:nth-child(3) .bar-btn {
-    background-color: #FF8800; }
-  #record-section li:nth-child(4) .bar-btn {
-    background-color: #04EEFF; }
-  #record-section li:nth-child(5) .bar-btn {
-    background-color: #04FF3A; }
 
 /** technology-section **/
 #technology-section {

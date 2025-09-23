@@ -1,7 +1,7 @@
 <section id="services-page">
     <div class="container px-6 md:px-4">
         <div class="md:flex-row">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 slide-up">
                 <div class="card px-[17px] py-[25px]">
                     <div class="card-img mb-4">
                         <img class src="./images/AI-Machine-learning.png" alt="" />
@@ -50,7 +50,7 @@
                         <a href="#" class="btn btn-primary text-xl">Get a Quote</a>
                     </div>
                 </div>
-                <div class="card px-[17px] py-[25px]">
+                <div class="card px-[17px] py-[25px] slide-up">
                     <div class="card-img mb-4">
                         <img class src="./images/Business-Automation-2.png" alt="" />
                     </div>
@@ -62,7 +62,7 @@
                         <a href="#" class="btn btn-primary text-xl">Get a Quote</a>
                     </div>
                 </div>
-                <div class="card px-[17px] py-[25px]">
+                <div class="card px-[17px] py-[25px] slide-up">
                     <div class="card-img mb-4">
                         <img class src="./images/Consulting-2.png" alt="" />
                     </div>
@@ -74,7 +74,7 @@
                         <a href="#" class="btn btn-primary text-xl">Get a Quote</a>
                     </div>
                 </div>
-                <div class="card px-[17px] py-[25px]">
+                <div class="card px-[17px] py-[25px] slide-up">
                     <div class="card-img mb-4">
                         <img class src="./images/Innovation-Strategy-2.png" alt="" />
                     </div>

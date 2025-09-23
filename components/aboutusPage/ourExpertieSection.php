@@ -3,7 +3,7 @@
     <img class="vertical" src="./images/vertical.png" alt="" />
     <div class="container px-6 md:px-4">
         <div class="md:flex-row text-center">
-            <div class="text-cnt">
+            <div class="text-cnt slide-up">
                 <h2 class="text-[20px] sm:text-[30px] md:text-[41px]">Our <span class="text-clr">EXPERTIES</span></h2>                        
             </div>
             <ul class="list lg:flex justify-between relative">

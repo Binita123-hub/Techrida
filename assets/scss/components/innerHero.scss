@@ -1,6 +1,9 @@
 @import "variables";
 #innerhero-section  { 
     overflow: hidden; 
+    .fade-in {
+        transition-delay: 0.4s
+    }
     .bg-img {
         position: absolute;
         left: 0;

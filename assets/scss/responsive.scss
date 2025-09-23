@@ -37,7 +37,13 @@
     height: auto;
   }
   #our-experties .border-img {
-     display: none;
+    display: none;
+  }
+  #record-section .card:nth-child(1),
+  #record-section .card:nth-child(2),
+  #record-section .card:nth-child(3)  {
+    transform:inherit !important;
+    opacity: 1 !important;
   }
 }
 

@@ -19,7 +19,7 @@
             <img class="overlay-img w-full h-full" src="./images/aboutus-bg.png" alt="" />
         </div>
         <div class="container px-6 md:px-4 flex justify-between items-center h-full relative">
-            <div class="banner-wrapper w-full md:flex-row text-center"> 
+            <div class="banner-wrapper w-full md:flex-row text-center fade-in"> 
                 <h1 class="text-[40px] md:text-[59px] leading-[64px]">About <span class="text-clr">Us</span></h1> 
                 <nav class="breadcrumb flex justify-center"> 
                     <ol class="breadcrumb flex">

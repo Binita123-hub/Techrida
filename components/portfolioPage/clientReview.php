@@ -1,11 +1,11 @@
 <section id="review-section">
     <div class="container container-sm px-6 md:px-4">
         <div class="md:flex-row">
-            <div class="text-cnt text-center">
+            <div class="text-cnt text-center slide-up">
                 <h2 class="text-[20px] sm:text-[30px] md:text-[41px]">Client <span class="text-clr">Review</span></h2>                        
             </div>
             <div id="slick">
-                <div class="slick-slider mt-10">
+                <div class="slick-slider mt-10 slide-up">
                     <div class="element element-1">
                         <div class="card text-center">                        
                             <div class="card-body text-xs">

@@ -18,7 +18,7 @@
             <img class="overlay-img w-full h-full" src="./images/conact-bg.jpg" alt="" />
         </div>
         <div class="container px-6 md:px-4 flex justify-between items-center h-full">
-            <div class="banner-wrapper w-full md:flex-row text-center"> 
+            <div class="banner-wrapper w-full md:flex-row text-center fade-in"> 
                 <h1 class="text-[40px] md:text-[59px] leading-[64px]">CONTACT <span class="text-clr">US</span></h1>                
             </div>
         </div>

@@ -20,7 +20,7 @@
             <img class="overlay-img w-full h-full" src="./images/Portfolio-bg.png" alt="" />
         </div>
         <div class="container px-6 md:px-4 flex justify-between items-center h-full">
-            <div class="banner-wrapper w-full md:flex-row text-center"> 
+            <div class="banner-wrapper w-full md:flex-row text-center fade-in"> 
                 <h1 class="text-[40px] md:text-[59px] leading-[64px] mb-4">Our <span class="text-clr">Portfolio</span></h1>
                 <p class="text-lg">At the core of what we create is a drive to simplify, enhance, and inspire. Each project is more than technology—it’s a story of collaboration and transformation. We craft secure, efficient, and human-centered solutions that streamline complexity, deliver seamless experiences, and reflect a vision for tomorrow.</p>
                 
@@ -42,6 +42,9 @@
 
     <!-- technology -->
     <?php include "components/portfolioPage/technology.php";
+    ?>
+
+    <?php include "components/layout/footer.php";
     ?>
 
 

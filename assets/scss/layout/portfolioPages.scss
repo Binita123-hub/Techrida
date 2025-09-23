@@ -1,9 +1,19 @@
 @import "../variables.scss";
-#work-Portfolio {
+#our-Portfolio {
     padding: 80px 0;
     .card {
         position: relative;
         overflow: hidden;
+        &:nth-child(7),
+        &:nth-child(8),
+        &:nth-child(9),
+        &:nth-child(10),
+        &:nth-child(11),
+        &:nth-child(12){
+            .slide-up {
+                transition-delay: 0.2s
+            }
+        }
         .card-img {
             height: 100%;
             img {
@@ -35,6 +45,11 @@
             }
         }
     }
+    .view-btn {
+        &.slide-up {
+            transition-delay: 0.4s
+        }
+    }
 }
 
 /** review-section **/
@@ -64,6 +79,12 @@
     .details {
        color: $white; 
     }
+    .slick-slider {
+        &.slide-up {
+            transition-delay: 0.2s
+        }
+    }
+   
     .slick-list.draggable {
         width: 100%;
         max-width: 790px;
@@ -88,7 +109,29 @@
     .card {
         box-shadow: 1px 0 13px rgba(0, 0, 0, 0.2);
         border: 1px solid $brd-gray;
-        border-radius: 10px;
+        border-radius: 10px;        
+        transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        background-color: $white;
+    }
+    .card:nth-child(1) {
+        opacity: 0;
+        transform: translateX(300px) translateY(0px) scale(0.95);
+    }
+    .card:nth-child(2) {
+        transform: translateY(0) scale(1);
+        position: relative;
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }    
+    .card:nth-child(3) {
+        opacity: 0;
+        transform: translateX(-300px) translateY(0px) scale(0.95);
+        z-index: -1;
+    }    
+    .card:nth-child(1).active,
+    .card:nth-child(3).active  {
+        opacity: 1;
+        transform: translateX(0) translateY(0) scale(1);
     }
     .text {
         h4{
@@ -106,36 +149,18 @@
     .bar {
         height: 10px;
         background-color:$white ;
+        overflow: hidden;
     }
     .bar-btn {
-        width: 5%;
         background-color: $green;
+        height: 10px;
+        width: 0%;
+        transition: width 1.5s ease-in-out 0.5s;
     }
     .percentage {
         color: $green;
     }
-    li {
-        &:nth-child(2) {
-             .bar-btn {
-                background-color: $pink;
-            }
-        }
-        &:nth-child(3) {
-             .bar-btn {
-                background-color: $orange;
-            }
-        }
-        &:nth-child(4) {
-             .bar-btn {
-                background-color: $blue;
-            }
-        }
-        &:nth-child(5) {
-             .bar-btn {
-                background-color: $green;
-            }
-        }
-    }
+    
 }
 
 /** technology-section **/

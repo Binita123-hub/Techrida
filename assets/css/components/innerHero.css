@@ -1,5 +1,7 @@
 #innerhero-section {
   overflow: hidden; }
+  #innerhero-section .fade-in {
+    transition-delay: 0.4s; }
   #innerhero-section .bg-img {
     position: absolute;
     left: 0;
