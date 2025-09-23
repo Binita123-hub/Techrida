@@ -18,17 +18,5 @@
       color: #ffffff; }
       #innerhero-section .banner-wrapper h1 span {
         color: #44C8F5; }
-  #innerhero-section.contact-page h1 {
-    color: #ffffff;
-    letter-spacing: 10px; }
-  #innerhero-section.contact-page .contact-wrap {
-    color: #ffffff; }
-  #innerhero-section.contact-page .map img {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
-  #innerhero-section.contact-page .mascot {
-    position: absolute;
-    right: 0;
-    bottom: 2%;
-    width: 30px; }
 
 /*# sourceMappingURL=innerHero.css.map */

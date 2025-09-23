@@ -249,6 +249,27 @@ body {
     content: '/';
     color: #ffffff; }
 
+form .group {
+  margin-bottom: 30px; }
+form input,
+form textarea {
+  font-size: 18px;
+  background-color: #ffffff;
+  border-radius: 10px; }
+  form input::placeholder,
+  form textarea::placeholder {
+    color: #C2C2C2; }
+form input {
+  height: 59px; }
+form .btn-secondary {
+  background-color: #034EA2;
+  color: #ffffff;
+  padding: 15px 20px;
+  width: 240px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 500; }
+
 header {
   position: fixed;
   padding: 16px 0;
@@ -498,7 +519,12 @@ header {
     border-radius: 0 40px 0 0; }
 
 #our-experties {
-  padding: 100px 0 0; }
+  padding: 100px 0 0;
+  position: relative; }
+  #our-experties .vertical {
+    position: absolute;
+    right: 1%;
+    top: 6%; }
   #our-experties .items-wrap {
     width: 100%;
     margin: 0 auto; }
@@ -605,18 +631,6 @@ header {
       color: #ffffff; }
       #innerhero-section .banner-wrapper h1 span {
         color: #44C8F5; }
-  #innerhero-section.contact-page h1 {
-    color: #ffffff;
-    letter-spacing: 10px; }
-  #innerhero-section.contact-page .contact-wrap {
-    color: #ffffff; }
-  #innerhero-section.contact-page .map img {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); }
-  #innerhero-section.contact-page .mascot {
-    position: absolute;
-    right: 0;
-    bottom: 2%;
-    width: 30px; }
 
 #services-page {
   padding: 80px 0; }
@@ -741,6 +755,80 @@ header {
       transform: scale(1.5);
       margin-top: -50%; }
 
+#conatct-section {
+  padding: 0px 0 60px; }
+  #conatct-section .text-cnt {
+    height: 80px; }
+  #conatct-section .contact-wrap {
+    border-radius: 10px;
+    margin-top: -10%;
+    box-shadow: -3px 0px 8px rgba(0, 0, 0, 0.2); }
+  #conatct-section .left-cnt {
+    background-color: #ffffff;
+    padding: 50px 16px 16px;
+    border-radius: 10px 0 0 10px; }
+  #conatct-section .text-cnt h2 {
+    margin-bottom: 10px; }
+  #conatct-section .contact-info {
+    background-color: #034EA2;
+    border-radius: 10px;
+    color: #ffffff;
+    line-height: 18px; }
+  #conatct-section .socail-media a {
+    font-size: 25px; }
+  #conatct-section .map {
+    height: 395px; }
+  #conatct-section .right-cnt {
+    background-color: #DEF0FF;
+    border-radius: 0 10px 10px 0;
+    padding: 50px 47px 30px; }
+    #conatct-section .right-cnt h2 {
+      color: #564C4C; }
+  #conatct-section .mascot {
+    position: absolute;
+    right: 1%;
+    bottom: 0;
+    width: 50px; }
+
+footer {
+  overflow: hidden;
+  padding: 60px 0; }
+  footer .bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+  footer .links {
+    color: #ffffff;
+    font-weight: 500; }
+    footer .links a {
+      display: block;
+      margin-bottom: 10px; }
+  footer form .group {
+    margin: 0; }
+  footer form input {
+    background-color: #ffffff;
+    padding-right: 42px;
+    border-radius: 5px;
+    height: auto; }
+  footer form i {
+    color: #0f67fd;
+    font-size: 28px; }
+  footer .btn-secondary {
+    background-color: #FF7A01;
+    margin: 0 !important;
+    width: 120px;
+    text-align: center;
+    font-size: 20px;
+    height: 47px;
+    padding: 7px 16px; }
+  footer .footer-bottom {
+    color: #ffffff; }
+    footer .footer-bottom .logo img {
+      width: 174px; }
+
 @media (min-width: 1024px) and (max-width: 1179px) {
   #services-page .card p {
     font-size: 13px !important; } }
@@ -762,14 +850,20 @@ header {
     display: block; }
 
   #hero-section .tab-icon img {
-    width: 30%; } }
+    width: 30%; }
+
+  #conatct-section .contact-wrap {
+    margin: 0; }
+
+  #conatct-section {
+    padding-top: 50px; }
+
+  #conatct-section .map {
+    height: auto; } }
 @media (max-width: 992px) {
   #about-section .left-cnt::before,
   #about-section .left-cnt::after {
-    content: inherit; }
-
-  #innerhero-section.contact-page h1 {
-    letter-spacing: 5px; } }
+    content: inherit; } }
 @media (max-width: 767px) {
   #hero-section .banner-wrapper.second-banner {
     padding: 40px 0; }
@@ -785,8 +879,11 @@ header {
   .text-cnt h2 {
     margin-bottom: 20px; }
 
-  #innerhero-section.contact-page h1 {
-    letter-spacing: 0px; }
+  #about-section .vertical {
+    left: -6%; }
+
+  #our-experties .vertical {
+    right: -6%; }
 
   #our-teams .slick-prev, #our-teams .slick-next {
     top: 50%;
@@ -802,7 +899,26 @@ header {
     margin: 0 auto; }
 
   #review-section .card-body {
-    padding: 30px 20px 80px; } }
+    padding: 30px 20px 80px; }
+
+  #conatct-section .left-cnt {
+    border-radius: 10px 10px 0 0; }
+
+  #conatct-section .right-cnt {
+    border-radius: 0 0 10px 10px; }
+
+  #conatct-section .right-cnt {
+    padding: 50px 30px 30px; }
+
+  form input,
+  form textarea {
+    font-size: 16px; }
+
+  form input {
+    height: auto; }
+
+  form .group {
+    margin-bottom: 20px; } }
 @media (max-width: 600px) {
   #review-section .slick-prev, #review-section .slick-next {
     top: auto;

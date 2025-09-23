@@ -1,5 +1,11 @@
 #our-experties {
     padding: 100px 0 0;
+    position: relative;
+    .vertical {
+        position: absolute;
+        right: 1%;
+        top: 6%;
+    }
     .items-wrap {
         width: 100%;
         margin: 0 auto;

@@ -19,14 +19,20 @@
     display: block; }
 
   #hero-section .tab-icon img {
-    width: 30%; } }
+    width: 30%; }
+
+  #conatct-section .contact-wrap {
+    margin: 0; }
+
+  #conatct-section {
+    padding-top: 50px; }
+
+  #conatct-section .map {
+    height: auto; } }
 @media (max-width: 992px) {
   #about-section .left-cnt::before,
   #about-section .left-cnt::after {
-    content: inherit; }
-
-  #innerhero-section.contact-page h1 {
-    letter-spacing: 5px; } }
+    content: inherit; } }
 @media (max-width: 767px) {
   #hero-section .banner-wrapper.second-banner {
     padding: 40px 0; }
@@ -42,8 +48,11 @@
   .text-cnt h2 {
     margin-bottom: 20px; }
 
-  #innerhero-section.contact-page h1 {
-    letter-spacing: 0px; }
+  #about-section .vertical {
+    left: -6%; }
+
+  #our-experties .vertical {
+    right: -6%; }
 
   #our-teams .slick-prev, #our-teams .slick-next {
     top: 50%;
@@ -59,7 +68,26 @@
     margin: 0 auto; }
 
   #review-section .card-body {
-    padding: 30px 20px 80px; } }
+    padding: 30px 20px 80px; }
+
+  #conatct-section .left-cnt {
+    border-radius: 10px 10px 0 0; }
+
+  #conatct-section .right-cnt {
+    border-radius: 0 0 10px 10px; }
+
+  #conatct-section .right-cnt {
+    padding: 50px 30px 30px; }
+
+  form input,
+  form textarea {
+    font-size: 16px; }
+
+  form input {
+    height: auto; }
+
+  form .group {
+    margin-bottom: 20px; } }
 @media (max-width: 600px) {
   #review-section .slick-prev, #review-section .slick-next {
     top: auto;

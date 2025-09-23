@@ -1,5 +1,6 @@
 
 <section id="our-experties">
+    <img class="vertical" src="./images/vertical.png" alt="" />
     <div class="container px-6 md:px-4">
         <div class="md:flex-row text-center">
             <div class="text-cnt">

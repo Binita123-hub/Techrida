@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 33 of assets/scss/components/ourExperties.scss
+        on line 13 of assets/scss/components/footer.scss
 
-28:         position: absolute;
-29:         left: 0;
-30:         bottom: 0;
-31:         width: 100%;
-32:         padding: 10px 5px;        
-33:         color: $white;
-34:         z-index: 1;
-35:         border-top: 1px solid $white;
-36:         overflow: hidden;
-37:         &::before{
-38:             content: "";
+8:         width: 100%;
+9:         height: 100%;
+10:         z-index: -1;
+11:     }
+12:     .links {
+13:         color: $white;
+14:         font-weight: 500;
+15:         a {
+16:             display: block;
+17:             margin-bottom: 10px;
+18:         }
 
 Backtrace:
-assets/scss/components/ourExperties.scss:33
+assets/scss/components/footer.scss:13
 C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in 'Sass::Script::Tree::Variable#_perform'
 C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in 'Sass::Script::Tree::Node#perform'
 C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in 'Sass::Tree::Visitors::Perform#visit_prop'
@@ -80,4 +80,4 @@ C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-listen-4.0.0/lib/sass-liste
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 33 of assets/scss/components/ourExperties.scss\A \A 28:         position: absolute;\A 29:         left: 0;\A 30:         bottom: 0;\A 31:         width: 100%;\A 32:         padding: 10px 5px;        \A 33:         color: $white;\A 34:         z-index: 1;\A 35:         border-top: 1px solid $white;\A 36:         overflow: hidden;\A 37:         &::before{\A 38:             content: \"\";"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 13 of assets/scss/components/footer.scss\A \A 8:         width: 100%;\A 9:         height: 100%;\A 10:         z-index: -1;\A 11:     }\A 12:     .links {\A 13:         color: $white;\A 14:         font-weight: 500;\A 15:         a {\A 16:             display: block;\A 17:             margin-bottom: 10px;\A 18:         }"; }

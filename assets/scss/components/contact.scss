@@ -1,0 +1,49 @@
+#conatct-section{
+    padding: 0px 0 60px;
+    .text-cnt{
+            height: 80px;
+    }
+    .contact-wrap {
+        border-radius: 10px;
+        margin-top: -10%;
+        box-shadow: -3px 0px 8px rgba(0, 0, 0, 0.2);
+    }
+    .left-cnt {
+        background-color:  $white;
+        padding: 50px 16px 16px; 
+        border-radius: 10px 0 0 10px;
+    }
+    .text-cnt {
+         h2 {
+             margin-bottom: 10px;
+         }
+    }
+    .contact-info {
+        background-color: $primary-clr;
+        border-radius: 10px;
+        color: $white;
+        line-height: 18px;
+    }
+    .socail-media {
+        a {
+            font-size: 25px;
+        }
+    }
+    .map {
+        height: 395px;
+    }
+    .right-cnt  {
+        background-color: $form-bg;
+        border-radius:0 10px 10px 0;
+        padding: 50px 47px 30px; 
+        h2 {
+            color: $form-text;
+        }
+    }
+    .mascot {
+        position: absolute;
+        right: 1%;
+        bottom: 0;
+        width: 50px;
+    }
+}
