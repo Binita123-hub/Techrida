@@ -177,17 +177,15 @@ body {
     color: #ffffff; }
 
 form .group {
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
 form input,
 form textarea {
-  font-size: 18px;
+  font-size: 16px;
   background-color: #ffffff;
-  border-radius: 10px; }
+  border-radius: 5px; }
   form input::placeholder,
   form textarea::placeholder {
     color: #C2C2C2; }
-form input {
-  height: 59px; }
 form .btn-secondary {
   background-color: #034EA2;
   color: #ffffff;

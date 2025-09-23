@@ -3,38 +3,38 @@
         <div class="lg:flex md:flex-row contact-wrap relative">
             <div class="left-cnt lg:w-1/2 lg:pr-10 mb-5 lg:mb-0">
                 <div class="text-cnt text-center">
-                    <h2 class="text-[30px] lg:text-[40px] font-bold">Get In <span class="text-clr">Touch</span></h2>
+                    <h2 class="text-[20px] text-[30px] font-bold">Get In <span class="text-clr">Touch</span></h2>
                     <p>Let,s Discuss together</p>
                 </div>
                 <ul class="contact-info grid grid-cols-1 lg:grid-cols-2 gap-5 p-4 lg:p-8 mb-5">
                    <li>
-                        <div class="xs:flex items-center mb-2">
+                        <div class="xs:flex items-center mb-1">
                             <div class="me-2 w-[37px] md:w-[37px]">
                                 <img src="./images/mail.png" alt="" />
                             </div>
-                            <div class="text-[14px]">
+                            <div class="text-base">
                                 <div class="title font-bold">Email Us</div>
                                 LoremIspum@gmail.com
                             </div>
                         </div>
                    </li> 
-                   <li class="mb-4">
-                        <div class="xs:flex items-center mb-2">
+                   <li>
+                        <div class="xs:flex items-center mb-1">
                             <div class="me-2 w-[37px] md:w-[37px]">
                                 <img src="./images/phone.png" alt="" />
                             </div>
-                            <div class="text-[14px]">
+                            <div class="text-base">
                                 <div class="title font-bold">Call Us</div>
                                 977-9812345678
                             </div>
                         </div>
                    </li> 
                    <li>
-                        <div class="xs:flex items-center mb-2 md:mb-0">
+                        <div class="xs:flex items-center mb-1 md:mb-0">
                             <div class="me-2 w-[37px] md:w-[37px]">
                                 <img src="./images/location.png" alt="" />
                             </div>
-                            <div class="text-[14px]">
+                            <div class="text-base">
                                 <div class="title font-bold">Head Office</div>
                                 Gyaneshwor ,Kathmandu
                             </div>
@@ -42,7 +42,7 @@
                    </li> 
                    <li>
                         <div class="flex items-center md:mb-0">
-                            <div class="text-[14px] socail-media">
+                            <div class="text-base socail-media">
                                 <div class="title font-bold mb-2">Follow Our Social Media</div>
                                 <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
                                 <a href="#" class="linkedin mx-2"><i class="fa-brands fa-linkedin"></i></a>
@@ -52,13 +52,15 @@
                    </li> 
                 </ul>
                 <div class="map">
-                    <img class="w-full h-full" src="./images/map.png" alt="" />
+                    <!-- <img class="w-full h-full" src="./images/map.png" alt="" /> -->
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d61428.417818685964!2d-47.94048907413692!3d-15.78938834782067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPlano%20Piloto!5e0!3m2!1spt-BR!2sbr!4v1569520090696!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="map"></iframe>
                 </div>
             </div>
             <div class="right-cnt lg:w-1/2 relative">
                 <div class="form-wrap">
                     <div class="text-cnt text-center">
-                        <h2 class="text-[20px] md:text-[30px] lg:text-[40px] font-bold">Fill The Form</h2>
+                        <h2 class="text-[20px] md:text-[30px] font-bold">Fill The Form</h2>
+                        <p>Lorem Ipsum is simply dummy text </p>
                     </div>
                     <form class="w-full"> 
                         <div class="w-full group">
@@ -82,7 +84,6 @@
                     </form>
                 </div>
             </div>
-            <img class="mascot" src="./images/chat-icon.png" alt="" />
         </div>
     </div>
 </section>

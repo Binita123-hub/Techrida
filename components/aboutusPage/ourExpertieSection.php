@@ -6,7 +6,7 @@
             <div class="text-cnt">
                 <h2 class="text-[20px] sm:text-[30px] md:text-[41px]">Our <span class="text-clr">EXPERTIES</span></h2>                        
             </div>
-            <ul class="list lg:flex justify-between">
+            <ul class="list lg:flex justify-between relative">
                 <li class="lg:w-[18.75%;] md:flex items-end lg:h-[575px] lg:px-2 mb-6 lg:mb-0">
                     <div class="items-wrap max-w-[220px] h-[313px] relative overflow-hidden">
                         <div class="img-cnt">

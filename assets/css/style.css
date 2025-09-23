@@ -250,17 +250,15 @@ body {
     color: #ffffff; }
 
 form .group {
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
 form input,
 form textarea {
-  font-size: 18px;
+  font-size: 16px;
   background-color: #ffffff;
-  border-radius: 10px; }
+  border-radius: 5px; }
   form input::placeholder,
   form textarea::placeholder {
     color: #C2C2C2; }
-form input {
-  height: 59px; }
 form .btn-secondary {
   background-color: #034EA2;
   color: #ffffff;
@@ -777,18 +775,20 @@ header {
   #conatct-section .socail-media a {
     font-size: 25px; }
   #conatct-section .map {
-    height: 395px; }
+    height: 275px;
+    width: 100%;
+    overflow: hidden;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
   #conatct-section .right-cnt {
     background-color: #DEF0FF;
     border-radius: 0 10px 10px 0;
     padding: 50px 47px 30px; }
     #conatct-section .right-cnt h2 {
       color: #564C4C; }
-  #conatct-section .mascot {
-    position: absolute;
-    right: 1%;
-    bottom: 0;
-    width: 50px; }
 
 footer {
   overflow: hidden;
@@ -810,9 +810,7 @@ footer {
     margin: 0; }
   footer form input {
     background-color: #ffffff;
-    padding-right: 42px;
-    border-radius: 5px;
-    height: auto; }
+    padding-right: 42px; }
   footer form i {
     color: #0f67fd;
     font-size: 28px; }

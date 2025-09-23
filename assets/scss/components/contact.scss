@@ -30,7 +30,14 @@
         }
     }
     .map {
-        height: 395px;
+        height: 275px;
+        width: 100%;
+        overflow: hidden;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
     }
     .right-cnt  {
         background-color: $form-bg;
@@ -39,11 +46,5 @@
         h2 {
             color: $form-text;
         }
-    }
-    .mascot {
-        position: absolute;
-        right: 1%;
-        bottom: 0;
-        width: 50px;
     }
 }
