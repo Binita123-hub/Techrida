@@ -15,9 +15,9 @@
     ?>
 
     <!-- inner-banner -->
-    <section id="innerhero-section" class="w-full">    
+    <section id="innerhero-section" class="relative w-full lg:h-[100vh]">    
         <div class="bg-img">
-            <img class="overlay-img" src="./images/Portfolio-bg.png" alt="" />
+            <img class="overlay-img w-full h-full" src="./images/Portfolio-bg.png" alt="" />
         </div>
         <div class="container px-6 md:px-4 flex justify-between items-center h-full">
             <div class="banner-wrapper w-full md:flex-row text-center"> 

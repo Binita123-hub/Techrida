@@ -167,4 +167,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.breadcrumb .breadcrumb-item {
+  position: relative; }
+  .breadcrumb .breadcrumb-item a {
+    color: #ffffff;
+    font-weight: 700; }
+  .breadcrumb .breadcrumb-item:not(:last-child):after {
+    content: '/';
+    color: #ffffff; }
+
 /*# sourceMappingURL=index.css.map */

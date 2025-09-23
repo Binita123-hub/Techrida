@@ -1,5 +1,5 @@
 <header id="mainHeader">
-    <div class="container container-sm px-6 md:px-4">
+    <div class="container container-sm px-6 md:px-4 relative">
         <div class="flex items-center justify-between gap-5 md:h-[45px]">
             <div class="logo-wrap w-[35%]">
                 <a class="logo" href="index.php">
@@ -15,14 +15,14 @@
                         <span class="middle-bun"></span>
                         <span class="bottom-bun"></span>
                     </button>
-                    <div class="menu is-hidden">
+                    <div class="menu">
                         <div class="menu-wrap w-full">
                             <div class="navigation-wrap flex items-center lg:h-[400px]">
                                 <ul class="w-full">
                                     <li class="py-3"><a href="#" class="text-base">Home</a></li>
-                                    <li class="py-3"><a href="#" class="text-base">About Us</a></li>
-                                    <li class="py-3"><a href="#" class="text-base">Our Services</a></li>
-                                    <li class="py-3"><a href="#" class="text-base">Our Portfilio</a></li>
+                                    <li class="py-3"><a href="aboutUsPage.php" class="text-base">About Us</a></li>
+                                    <li class="py-3"><a href="servicesPage.php" class="text-base">Our Services</a></li>
+                                    <li class="py-3"><a href="portfolioPage.php" class="text-base">Our Portfilio</a></li>
                                     <li class="py-3"><a href="contactUsPage.php" class="text-base">Contact Us</a></li>
                                 </ul>
                             </div>
@@ -46,4 +46,5 @@
             </div> 
         </div>
     </div>
+    <div class="overlay"></div>
 </header>

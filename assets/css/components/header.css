@@ -8,6 +8,8 @@ header {
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
+  header.header-scrolled {
+    background: linear-gradient(to right, #053178 0%, #0b55d0 100%); }
   header.banner-active .logo {
     display: none;
     transition: all 0.3s ease; }
@@ -15,7 +17,8 @@ header {
     padding: 3px 11px;
     color: #034EA2;
     color: #ffffff;
-    border: 1px solid #ffffff; }
+    border: 1px solid #ffffff;
+    z-index: 99; }
     header .btn:hover {
       background: #034EA2;
       border-color: #034EA2; }
@@ -29,7 +32,8 @@ header {
     -ms-transition: all 0.25s;
     -o-transition: all 0.25s;
     transition: all 0.25s;
-    position: relative; }
+    position: relative;
+    z-index: 99; }
     header .hamburger .top-bun,
     header .hamburger .middle-bun,
     header .hamburger .bottom-bun {
@@ -57,18 +61,28 @@ header {
       header .hamburger.open .bottom-bun {
         transform: rotate(-45deg) translatex(-4px); }
   header .menu {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 350px;
+    position: absolute;
+    top: -16px;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
     background-color: #0F5FB8;
-    box-shadow: 0px 0 13px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-out;
-    z-index: -1;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-out, right 0.3s ease-out;
+    z-index: 9;
+    height: 100vh;
     padding: 65px 30px; }
-    header .menu.is-hidden {
-      transform: translateX(400px); }
+    header .menu:after {
+      content: "";
+      left: 0;
+      top: 0;
+      position: absolute;
+      background-color: #0F5FB8;
+      height: 100%;
+      width: 1000%;
+      z-index: -1; }
+    header .menu.is-open {
+      right: 0; }
     header .menu a {
       color: #ffffff;
       transition: transform 0.3s ease-out; }
@@ -79,5 +93,19 @@ header {
       font-weight: 700; }
   header .address-cnt i {
     font-size: 20px; }
+  header .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease; }
+    header .overlay.is-visible {
+      opacity: 1;
+      visibility: visible; }
 
 /*# sourceMappingURL=header.css.map */

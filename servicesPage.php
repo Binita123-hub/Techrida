@@ -14,11 +14,15 @@
     <?php include "components/layout/header.php";
     ?>
 
+
     <!-- inner-banner -->
-    <?php include "pages/inner-banner.php";
+    <?php include "components/layout/inner-banner.php" ;
     ?>
 
-    <section id="services-page">
+    <?php include "components/servicesPage/services.php" ;
+    ?>
+
+    <!-- <section id="services-page">
         <div class="container px-6 md:px-4">
             <div class="md:flex-row">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -109,7 +113,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <script src="assets/js/common.js"></script>
 </body>

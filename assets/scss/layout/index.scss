@@ -5,6 +5,7 @@ body{
     font-family:$font-Montserrat;
     font-weight: 400;
     color: $text-clr;
+    // overflow: hidden;
 }
 .container {
     width: 100%;
@@ -109,6 +110,21 @@ body{
 // #slick .slick-prev::before{
 //   content: url(../../images/preview.png);
 // }
+
+
+.breadcrumb{
+    .breadcrumb-item{
+        position: relative;
+        a {
+            color: $white;
+            font-weight: 700;
+        }
+    &:not(:last-child):after{
+        content: '/';
+        color: $white;
+        }
+    }
+}
 
 
 

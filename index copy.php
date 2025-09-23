@@ -29,9 +29,7 @@
     <?php include "components/layout/ourTeamSection.php";
     ?> 
 
-    <!-- our-team -->
-    <?php include "components/layout/contactSection.php";
-    ?> 
+ 
 
     
     
