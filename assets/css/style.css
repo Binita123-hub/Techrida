@@ -618,6 +618,10 @@ header {
       background: inherit;
       filter: blur(8px);
       box-shadow: inset 0 0 0 220px rgba(255, 255, 255, 0.3); }
+  #our-experties li:nth-child(1) .items-wrap, #our-experties li:nth-child(5) .items-wrap {
+    transition-delay: 0.4s; }
+  #our-experties li:nth-child(2) .items-wrap, #our-experties li:nth-child(4) .items-wrap {
+    transition-delay: 0.2s; }
 
 #our-teams {
   padding: 100px 0; }

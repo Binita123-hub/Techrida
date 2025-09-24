@@ -1,83 +1,58 @@
-/*
-Error: Undefined variable: "$white".
-        on line 49 of assets/scss/components/ourExperties.scss
+#our-experties {
+  padding: 100px 0 0;
+  position: relative; }
+  #our-experties .vertical {
+    position: absolute;
+    right: 1%;
+    top: 6%; }
+  #our-experties .border-img {
+    position: absolute; }
+  #our-experties .borderimg-1 {
+    left: 3%;
+    top: 12%; }
+  #our-experties .borderimg-2 {
+    left: 43%;
+    top: 12%; }
+  #our-experties .borderimg-3 {
+    right: 3%;
+    bottom: -5%; }
+  #our-experties .items-wrap {
+    width: 100%;
+    margin: 0 auto; }
+    #our-experties .items-wrap:after {
+      content: "";
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(68, 200, 245, 0.6);
+      position: absolute; }
+    #our-experties .items-wrap:hover:after {
+      content: inherit; }
+  #our-experties .details {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 5px;
+    color: #ffffff;
+    z-index: 1;
+    border-top: 1px solid #ffffff;
+    overflow: hidden; }
+    #our-experties .details::before {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      left: -20px;
+      bottom: -20px;
+      background: inherit;
+      filter: blur(8px);
+      box-shadow: inset 0 0 0 220px rgba(255, 255, 255, 0.3); }
+  #our-experties li:nth-child(1) .items-wrap, #our-experties li:nth-child(5) .items-wrap {
+    transition-delay: 0.4s; }
+  #our-experties li:nth-child(2) .items-wrap, #our-experties li:nth-child(4) .items-wrap {
+    transition-delay: 0.2s; }
 
-44:         position: absolute;
-45:         left: 0;
-46:         bottom: 0;
-47:         width: 100%;
-48:         padding: 10px 5px;        
-49:         color: $white;
-50:         z-index: 1;
-51:         border-top: 1px solid $white;
-52:         overflow: hidden;
-53:         &::before{
-54:             content: "";
-
-Backtrace:
-assets/scss/components/ourExperties.scss:49
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in 'Sass::Script::Tree::Variable#_perform'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in 'Sass::Script::Tree::Node#perform'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in 'Sass::Tree::Visitors::Perform#visit_prop'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in 'Sass::Tree::Visitors::Base#visit'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'block in Sass::Tree::Visitors::Perform#visit'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'block in Sass::Stack#with_base'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in 'Sass::Stack#with_frame'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'Sass::Stack#with_base'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'Sass::Tree::Visitors::Perform#visit'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'block (2 levels) in Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'Array#map'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'block in Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in 'Sass::Tree::Visitors::Perform#with_environment'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in 'Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in 'Sass::Tree::Visitors::Base#visit'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'block in Sass::Tree::Visitors::Perform#visit'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'block in Sass::Stack#with_base'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in 'Sass::Stack#with_frame'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'Sass::Stack#with_base'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'Sass::Tree::Visitors::Perform#visit'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'block (2 levels) in Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'Array#map'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in 'block in Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in 'Sass::Tree::Visitors::Perform#with_environment'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in 'Sass::Tree::Visitors::Perform#visit_rule'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in 'Sass::Tree::Visitors::Base#visit'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'block in Sass::Tree::Visitors::Perform#visit'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'block in Sass::Stack#with_base'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in 'Sass::Stack#with_frame'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in 'Sass::Stack#with_base'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in 'Sass::Tree::Visitors::Perform#visit'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in 'block in Sass::Tree::Visitors::Base#visit_children'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in 'Array#map'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in 'Sass::Tree::Visitors::Base#visit_children'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in 'block in Sass::Tree::Visitors::Perform#visit_children'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in 'Sass::Tree::Visitors::Perform#with_environment'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in 'Sass::Tree::Visitors::Perform#visit_children'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in 'block in Sass::Tree::Visitors::Base#visit'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in 'Sass::Tree::Visitors::Perform#visit_root'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in 'Sass::Tree::Visitors::Base#visit'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in 'Sass::Tree::Visitors::Perform#visit'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in 'Sass::Tree::Visitors::Perform.visit'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in 'Sass::Tree::RootNode#css_tree'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in 'Sass::Tree::RootNode#render_with_sourcemap'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in 'Sass::Engine#_render_with_sourcemap'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in 'Sass::Engine#render_with_sourcemap'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in 'Sass::Plugin::Compiler#update_stylesheet'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in 'block in Sass::Plugin::Compiler#update_stylesheets'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in 'Array#each'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in 'Sass::Plugin::Compiler#update_stylesheets'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in 'Sass::Plugin::Compiler#on_file_changed'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in 'block in Sass::Plugin::Compiler#watch'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in 'SassListen::Event::Config#call'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in 'SassListen::Event::Processor#_process_changes'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in 'block in SassListen::Event::Processor#loop_for'
-<internal:kernel>:168:in 'Kernel#loop'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in 'SassListen::Event::Processor#loop_for'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in 'SassListen::Event::Loop#_wait_for_changes'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in 'block in SassListen::Event::Loop#setup'
-C:/Users/binis/.local/share/gem/ruby/3.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in 'block in SassListen::Internals::ThreadPool.add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 49 of assets/scss/components/ourExperties.scss\A \A 44:         position: absolute;\A 45:         left: 0;\A 46:         bottom: 0;\A 47:         width: 100%;\A 48:         padding: 10px 5px;        \A 49:         color: $white;\A 50:         z-index: 1;\A 51:         border-top: 1px solid $white;\A 52:         overflow: hidden;\A 53:         &::before{\A 54:             content: \"\";"; }
+/*# sourceMappingURL=ourExperties.css.map */
